@@ -1,0 +1,129 @@
+.contain-90 {
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+#menubar {
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	margin-top: 1%;
+	position: relative;
+	/*background-color: red;*/
+}
+#menubarleft {
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+#menubarleft a {
+	text-decoration: none;
+}
+#menubarleft a h1 {
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #6633CC;
+	/*position: absolute;*/
+	/*top: 30%;*/
+	margin-top: 10%;
+	display: inline-block;
+	/*left: 5%;*/
+	/*background-color: red;*/
+}
+#menubarleft a h2 {
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-weight: bold;*/
+	color: #9933FF;
+	margin-top: 10%;
+	display: inline-block;
+}
+#menubarright {
+	width: 40%;
+	height: 100%;
+	float: right;
+	/*background-color: red;*/
+}
+#menubarright ul {
+	margin-top: 12%;
+}
+#menubarright ul li {
+	display: inline-block;
+	margin-left: 10%;
+}
+#menubarright ul li a {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #42ACE4;
+	text-decoration: none;
+}
+#left {
+	width: 65%;
+	/*background-color: green;*/
+	position: relative;
+	margin-top: 2%;
+	margin-left: 5%;	
+	float: left;
+}
+#gamescreen {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	/*margin-top: 5%;
+	margin-left: 5%;*/
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#comment {
+	width: 100%;
+	margin-top: 5%;
+	/*background-color: red;*/
+}
+#viewcommentbutton {
+	width: 40%;
+	height: 50px;
+	margin: auto;
+	position: relative;
+	/*background-color: blue;*/
+	margin-top: 3%;
+	align-items: center;
+}
+#viewcommentbutton a {
+	margin-left: 25%;
+	text-decoration: none;
+	position: relative;
+	/*background-color: red;*/
+}
+#viewcommentbutton a input {
+	border: none;
+	border-radius: 30px;
+	padding: 4% 12%;
+	background-color: #0099FF;
+	color: white;
+	font-weight: bold;
+}
+#viewcommentbutton a i {
+	position: absolute;
+	top: 1%;
+	right: 8%;
+	font-size: 25px;
+	color: white;
+}
+#right {
+	width: 20%;
+	height: 500px;
+	/*background-color: red;*/
+	float: left;
+	margin-left: 5%;
+	margin-top: 2%;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#right h1 {
+	
+}
