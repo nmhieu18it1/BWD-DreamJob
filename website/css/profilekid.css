@@ -207,6 +207,11 @@ td a:hover {
 	margin-bottom: 4%;
 	margin-top: 2%;
 }
+.img {
+	width: 100%;
+	height: 70%;
+	position: relative;
+}
 .contentitem {
 	width: 15%;
 	height: 20%;
@@ -214,32 +219,129 @@ td a:hover {
 	margin-left: 4%;
 	margin-top: 3%;
 	display: inline-block;
+	position: relative;
 	background-color: white;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 	box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 }
-.contentitem img {
+.contentitem1 {
 	width: 100%;
-	height: 70%;
-	background-size: cover;
-	transition: all 0.4s;
+	height: 90%;
+	/*background-color: red;*/
+/*	margin-left: 4%;
+	margin-top: 3%;*/
+	display: inline-block;
+	position: relative;
+	transition: all 0.3s;
+	background-color: white;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	/*-webkit-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);*/
 }
-.contentitem img:hover {
-	transform: scale(1.5);
-	border: 2px solid white;
+.contentitem1:hover {
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 	box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
 }
-.contenitem h1 {
-	background-color: red;
+.contentitem1 img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+	position: relative;
+}
+.contentitem1 h1 {
+	/*background-color: red;*/
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+.contentitem1 a {
+	background-color: #0099FF;
+	color: white;
+	padding: 2% 10%;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+}
+.contentitem1 a:hover {
+	text-decoration: none;
+	color: white;
+}
+.contentitem img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: all 0.4s;
+	position: relative;
+}
+.contentitem img:hover {
+	transform: scale(1.5);
+	border: 2px solid white;
+	z-index: 999;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+}
+.contentitem h1 {
+	/*background-color: red;*/
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .contentitem a {
 	background-color: #0099FF;
 	color: white;
 	padding: 2% 6%;
 	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+}
+.contentitem a:hover {
+	text-decoration: none;
+	color: white;
+}
+.des {
+	width: 0%;
+	height: 100%;
+	background-color: rgb(100,100,100);
+	position: absolute;
+	left: 120%;
+	top: 0;
+	transition: all 0.3s;
+	overflow: hidden;
+	word-break: break-all;
+	display: block;
+	text-align: left;
+	border-radius: 10px;
+	opacity: 0;
+	z-index: 998;
+}
+.img:hover .des {
+	width: 120%;
+	opacity: 1;
+}
+.des h1 {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	margin-left: 10%;
+	margin-top: 15%;
+}
+.des h2 {
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	margin-left: 10%;
+	margin-top: 5%;
 }
 #pages {
 	width: 60%;
@@ -248,8 +350,8 @@ td a:hover {
 	bottom: 2%;
 	left: 15%;*/
 	margin: auto;
-	margin-bottom: 2%;
-	border: 2px solid #CC99FF;
+	margin-bottom: 5%;
+	/*border: 2px solid #CC99FF;*/
 	background-color: white;
 	border-radius: 10px;
 }
