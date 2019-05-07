@@ -349,6 +349,85 @@ body {
 	position: relative;
 	border-radius: 20px;
 	transition: all 0.2s;
+	cursor: pointer;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: all 0.2s;
+}
+.overlay h1 {
+	color: white;
+	font-family(stack): Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-top: 18%;
+	/*background-color: red;*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+.overlay h1:hover {
+	transform: scale(1.1);
+}
+.overlay h2 {
+	color: white;
+	font-family(stack): Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 48%;
+	/*margin: auto;*/
+	margin-top: 12%;
+	margin-bottom: 12%;
+	/*margin-left: 15%;*/
+	display: inline-block;
+	/*background-color: red;*/
+	opacity: 0;
+	transition: all 0.5s;
+}
+.overlay h1 a {
+	text-decoration: none;
+	color: white;
+}
+.playnow {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+	padding: 2% 8%;
+	border-radius: 10px;
+	transition: all 0.5s;
+	opacity: 0;
+}
+.playnow:hover {
+	text-decoration: none;
+	color: black;
+	padding: 2% 15%;
+	border-radius: 0;
+}
+.gameitem:hover .overlay{
+	background-color: rgba(0, 0, 0, 0.6);
+	transform: scale(1.2);
+	border-radius: 10px;
+}
+.gameitem:hover .overlay h1 {
+	opacity: 1;
+}
+.gameitem:hover .overlay h2 {
+	opacity: 1;
+}
+.gameitem:hover .overlay .playnow {
+	opacity: 1;
 }
 .gameitem img {
 	width: 100%;
@@ -357,8 +436,8 @@ body {
 	border-radius: 20px;
 	transition: all 0.2s;
 }
-.gameitem img:hover {
-	transform: scale(1.1);
+.gameitem:hover img {
+	transform: scale(1.2);
 	border-radius: 10px;
 }
 #gametop {
