@@ -1,7 +1,7 @@
 #loginright  {
   box-sizing: border-box;
   width: 260px;
-  margin: 100px auto 0;
+  margin: 25% auto 0;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 40px;
   border-radius: 3px;
@@ -58,8 +58,8 @@
 #loginleft {
   box-sizing: border-box;
   width: 800px;
-  height: 600px;
-  margin: 60px auto 0;
+  height: 500px;
+  margin: 9% auto 0;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 40px;
   border-radius: 3px;
