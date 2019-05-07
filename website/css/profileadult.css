@@ -50,6 +50,45 @@
 td a:hover {
 	text-decoration: none;
 }
+#menuicon {
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+#divmenu {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	background-color: white;
+	top: -20%;
+	left: 180%;
+	overflow: hidden;
+	word-break: break-all;
+	transition: all 0.3s;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#divmenu a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 2% 5%;
+} 
+#menuicon:hover {
+	transform: scale(1.1);
+}
+#menuicon:hover #divmenu {
+	width: 100px;
+	height: 30px;
+}
 #icon {
 	width: 8%;
 	height: 15%;

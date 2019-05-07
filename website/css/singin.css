@@ -20,6 +20,7 @@
   display: block;
   border: none;
   padding: 1px 0;
+  color: black;
   border-bottom: solid 1px #4e06fd;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #4e06fd 4%);
