@@ -401,9 +401,9 @@ body {
 }
 .playnow {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-weight: bold;
-	background-color: white;
+	background-color: #6859E7;
 	padding: 2% 8%;
 	border-radius: 10px;
 	transition: all 0.5s;
@@ -411,12 +411,12 @@ body {
 }
 .playnow:hover {
 	text-decoration: none;
-	color: black;
+	color: white;
 	padding: 2% 15%;
 	border-radius: 0;
 }
 .gameitem:hover .overlay{
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
 	transform: scale(1.2);
 	border-radius: 10px;
 }
@@ -439,6 +439,7 @@ body {
 .gameitem:hover img {
 	transform: scale(1.2);
 	border-radius: 10px;
+	opacity: 0.5;
 }
 #gametop {
 	width: 28%;
