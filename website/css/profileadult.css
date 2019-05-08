@@ -82,7 +82,14 @@ td a:hover {
 	padding: 5% 8%;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 2% 2%;
+	transition: all 0.3s;
 } 
+#divmenu a i {
+	transition: all 0.3s;
+}
+#divmenu a:hover i{
+	transform: scale(1.2);
+}
 #menuicon:hover {
 	transform: scale(1.1);
 }
