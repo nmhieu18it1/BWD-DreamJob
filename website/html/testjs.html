@@ -3,6 +3,7 @@
 <head>
 
 	<title>Test JavaScript</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/slide/index-01-01.png" />
 	<script type="text/javascript">
 		function conf() {
 			// body...
@@ -13,7 +14,7 @@
 			else {
 				alert("You choose Cancel !");
 			}
-		}
+		};
 		function prom() {
 			// body...
 			var result = prompt("Please tell me your AGE ?" , "0");
@@ -24,7 +25,54 @@
 			else {
 				alert("Could You Reinput?");
 			}
-		}
+		};
+		function str() {
+			// body...
+			var str1 = new String("Minh Hieu...");
+			var str2 = "Nguyen Minh Hieu.";
+			console.log(str1);
+			console.log(str2.toLowerCase());
+			// var result = confirm("Do you want to log str2 ?");
+			// if(result == true) {
+			// 	console.log(str2);
+			// }
+			// var result02 = prompt("How long do you want for str2 ?" , str2.length);
+			// for (var i = 0; i <= result02; i ++) {
+			// 	console.log(str2[i]);
+			// }
+			var result03 = prompt("What are you looking for ?");
+			console.log(str2.indexOf(result03));
+		};
+		
+		function love() {
+			// body...
+			// var choose = prompt("Who do you love ?\n 1. James Bond\n 2. Huge Jackman\n 3. Chris Evans");
+			var message = {
+				first: "James",
+				last: "Bond",
+				showName: function() {
+					return this.first + " " + this.last;
+				}
+			}
+			console.log(message.showName());
+		};
+
+		function datelog() {
+			var date = new Date('09/20/2017');
+			console.log(date);
+			console.log(date.getDay());
+		};
+		function arr() {
+			var ar01 = [1, 2, 3, 7, 10];
+			var ar02 = new Array('one', 'two', 'three');
+			for (var i = 0; i < ar01.length; i ++) {
+				console.log(ar01[i]);
+			}
+			for (var i = 0; i < ar02.length; i ++) {
+				console.log(ar02[i]);
+			}
+			console.log(ar02.join('-'));
+		};
 	</script>
 	<style type="text/css">
 		input {
@@ -37,6 +85,7 @@
 			color: white;
 			margin: 5%;
 			cursor: pointer;
+			outline: none;
 		}
 	</style>
 </head>
@@ -44,6 +93,9 @@
 
 	<input type="button" name="" onclick="conf();" value="Confirm">
 	<input type="button" name="" onclick="prom();" value="Prompt">
+	<input type="button" name="" onclick="love();" value="String">
+	<input type="button" name="" onclick="datelog();" value="Date">
+	<input type="button" name="" onclick="arr();" value="Array">
 
 </body>
 </html>
