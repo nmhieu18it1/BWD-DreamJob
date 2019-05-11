@@ -73,6 +73,18 @@
 			}
 			console.log(ar02.join('-'));
 		};
+		function cal() {
+			// body...
+			function add(a, b) {
+				return a+b;
+			}
+			return add;
+		};
+		function calcu() {
+			// body...
+			var a = cal();
+			console.log(a(10,20));
+		};
 	</script>
 	<style type="text/css">
 		input {
@@ -83,9 +95,13 @@
 			border-radius: 20px;
 			text-align: center;
 			color: white;
-			margin: 5%;
+			margin: 2%;
 			cursor: pointer;
 			outline: none;
+			transition: all 0.3s;
+		}
+		input:hover {
+			transform: scale(1.2);
 		}
 	</style>
 </head>
@@ -96,6 +112,7 @@
 	<input type="button" name="" onclick="love();" value="String">
 	<input type="button" name="" onclick="datelog();" value="Date">
 	<input type="button" name="" onclick="arr();" value="Array">
+	<input type="button" name="" onclick="calcu();" value="Cal">
 
 </body>
 </html>
