@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Test JavaScript</title>
+	<script type="text/javascript">
+		function conf() {
+			// body...
+			var result = confirm("Are You Sure ?");
+			if (result == true) {
+				alert("You choose OK !");
+			}
+			else {
+				alert("You choose Cancel !");
+			}
+		}
+		function prom() {
+			// body...
+			var result = prompt("Please tell me your AGE ?" , "0");
+			var con = confirm("You age: " + result + ", Is it right?");
+			if (con == true) {
+				alert("Thank You !");
+			}
+			else {
+				alert("Could You Reinput?");
+			}
+		}
+	</script>
+	<style type="text/css">
+		input {
+			width: 100px;
+			height: 30px;
+			background-color: #3399FF;
+			border: none;
+			border-radius: 20px;
+			text-align: center;
+			color: white;
+			margin: 5%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="button" name="" onclick="conf();" value="Confirm">
+	<input type="button" name="" onclick="prom();" value="Prompt">
+
+</body>
+</html>
