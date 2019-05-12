@@ -9,7 +9,6 @@ function showlistkid01() {
 	var iconkid = document.getElementById('iconkid');
 	iconkid.style.opacity = '1';
 	iconkid.style.backgroundColor = 'white';
-	iconkid.style.transform = 'scale(0.7)';
 	var iconkid01 = document.querySelector('#iconkid i');
 	iconkid01.style.color = '#222222';
 }
@@ -21,7 +20,6 @@ function hidelistkid01() {
 	listkid.style.opacity = '0';
 	var iconkid = document.getElementById('iconkid');
 	iconkid.style.opacity = '0.5';
-	iconkid.style.transform = 'scale(0.5)';
 	iconkid.style.backgroundColor = '#222222';
 	var iconkid01 = document.querySelector('#iconkid i');
 	iconkid01.style.color = 'white';	
