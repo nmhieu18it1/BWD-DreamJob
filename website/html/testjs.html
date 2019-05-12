@@ -4,88 +4,6 @@
 
 	<title>Test JavaScript</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../img/slide/index-01-01.png" />
-	<script type="text/javascript">
-		function conf() {
-			// body...
-			var result = confirm("Are You Sure ?");
-			if (result == true) {
-				alert("You choose OK !");
-			}
-			else {
-				alert("You choose Cancel !");
-			}
-		};
-		function prom() {
-			// body...
-			var result = prompt("Please tell me your AGE ?" , "0");
-			var con = confirm("You age: " + result + ", Is it right?");
-			if (con == true) {
-				alert("Thank You !");
-			}
-			else {
-				alert("Could You Reinput?");
-			}
-		};
-		function str() {
-			// body...
-			var str1 = new String("Minh Hieu...");
-			var str2 = "Nguyen Minh Hieu.";
-			console.log(str1);
-			console.log(str2.toLowerCase());
-			// var result = confirm("Do you want to log str2 ?");
-			// if(result == true) {
-			// 	console.log(str2);
-			// }
-			// var result02 = prompt("How long do you want for str2 ?" , str2.length);
-			// for (var i = 0; i <= result02; i ++) {
-			// 	console.log(str2[i]);
-			// }
-			var result03 = prompt("What are you looking for ?");
-			console.log(str2.indexOf(result03));
-		};
-		
-		function love() {
-			// body...
-			// var choose = prompt("Who do you love ?\n 1. James Bond\n 2. Huge Jackman\n 3. Chris Evans");
-			var message = {
-				first: "James",
-				last: "Bond",
-				showName: function() {
-					return this.first + " " + this.last;
-				}
-			}
-			console.log(message.showName());
-		};
-
-		function datelog() {
-			var date = new Date('09/20/2017');
-			console.log(date);
-			console.log(date.getDay());
-		};
-		function arr() {
-			var ar01 = [1, 2, 3, 7, 10];
-			var ar02 = new Array('one', 'two', 'three');
-			for (var i = 0; i < ar01.length; i ++) {
-				console.log(ar01[i]);
-			}
-			for (var i = 0; i < ar02.length; i ++) {
-				console.log(ar02[i]);
-			}
-			console.log(ar02.join('-'));
-		};
-		function cal() {
-			// body...
-			function add(a, b) {
-				return a+b;
-			}
-			return add;
-		};
-		function calcu() {
-			// body...
-			var a = cal();
-			console.log(a(10,20));
-		};
-	</script>
 	<style type="text/css">
 		input {
 			width: 100px;
@@ -103,6 +21,14 @@
 		input:hover {
 			transform: scale(1.2);
 		}
+		#div01 {
+			width: 700px;
+			height: 400px;
+			margin: auto;
+			background-color: #DDDDDD;
+			border: 2px solid black;
+			border-radius: 10px;
+		}
 	</style>
 </head>
 <body>
@@ -113,6 +39,17 @@
 	<input type="button" name="" onclick="datelog();" value="Date">
 	<input type="button" name="" onclick="arr();" value="Array">
 	<input type="button" name="" onclick="calcu();" value="Cal">
-
+	<input type="button" name="" onclick="inner();" value="Div">
+	<div id="div01">
+		<h1>Hello Guys !</h1>
+		<h2>Today is a good day !</h2>
+		<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+<script type="text/javascript" src="../js/testjs.js"></script>
 </body>
 </html>
