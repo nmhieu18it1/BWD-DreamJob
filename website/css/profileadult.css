@@ -777,40 +777,14 @@ td a:hover {
 	width: 30%;
 	height: 90%;
 	margin-left: 3%;
+<<<<<<< HEAD
 	margin-top: 1%;
 	/*background-color: red;*/
+=======
+	margin-top: 3%;
+	background-color: red;
+>>>>>>> 48a3c247edab34e1b633d97a369b6242dae79f76
 	float: left;
-}
-.smart {
-	width: 48%;
-	height: 20%;
-	transform: scale(0.7);
-	display: inline-block;
-	/*background-color: blue;*/
-}
-.smart img {
-	width: 70%;
-	height: 100%;
-	margin: auto;
-	margin-left: 15%;
-	background-color: white;
-	border-radius: 50px;
-	border: 3px solid #0099FF;
-}
-.smart h1 {
-	font-size: 17px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 5%;
-	transition: all 0.3s;
-}
-.smart h1:hover {
-	transform: scale(1.1);
-}
-.smart h1 a {
-	color: #0099FF;
-	text-decoration: none;
 }
 #game {
 	width: 100%;
@@ -989,7 +963,7 @@ td a:hover {
 }
 
 #document p{
-	width: 150%;
+	width: 100%;
 	height: 100%;
 	padding-top: 5%;
 	text-align: justify;
