@@ -1,5 +1,22 @@
 
 var tf = 1;
+function showhide() {
+	// body...
+	var btn = document.getElementById("btnshowhide");
+	var ct = document.querySelector("#div01 h2");
+	if (btn.getAttribute("value") == "Show") {
+		btn.setAttribute("value","Hide");
+	}
+	else {
+		btn.setAttribute("value","Show");
+	}
+	if (ct.getAttribute("class") == "show") {
+		ct.setAttribute("class", "hide");
+	}
+	else {
+		ct.setAttribute("class","show");
+	}
+}
 function inner() {
 	// body...
 	tf = -tf;

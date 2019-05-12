@@ -29,6 +29,12 @@
 			border: 2px solid black;
 			border-radius: 10px;
 		}
+		.show {
+			display: inline-block;
+		}
+		.hide {
+			display: none;
+		}
 	</style>
 </head>
 <body>
@@ -42,7 +48,8 @@
 	<input type="button" name="" onclick="inner();" value="Div">
 	<div id="div01">
 		<h1>Hello Guys !</h1>
-		<h2>Today is a good day !</h2>
+		<input type="button" name="" onclick="showhide();" value="Hide" id="btnshowhide">
+		<h2 class="show">Today is a good day !</h2>
 		<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
