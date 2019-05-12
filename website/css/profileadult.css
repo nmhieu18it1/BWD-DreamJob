@@ -1003,7 +1003,7 @@ td a:hover {
 	height: 100%;
 	position: relative;
 	margin: auto;
-	transition: all 0.3s;
+	transition: all 0.5s;
 	z-index: 999;
 }
 #document #img img:hover {
