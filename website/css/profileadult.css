@@ -9,7 +9,7 @@
 	opacity: 0.5;
 	-moz-opacity: 0.5;
 	-webkit-opacity: 0.5;
-	transform: scale(0.7);
+	transform: scale(0.5);
 	transition: all 0.4s;
 	z-index: 9999;
 }
@@ -137,7 +137,7 @@
 .kid-info h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	color: black;
+	color: #0099FF;
 	text-align: center;
 	margin-top: 10%;
 	font-weight: bold;
@@ -145,7 +145,7 @@
 .kid-info h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	color: black;
+	color: #9999FF;
 	text-align: center;
 	/*margin-top: 0%;*/
 	/*font-weight: bold;*/
