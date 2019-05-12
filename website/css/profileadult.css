@@ -39,7 +39,7 @@
 	right: 7%;
 	z-index: 999;
 	background-color: #444444;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	overflow: hidden;
 	transition: all 0.5s;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
