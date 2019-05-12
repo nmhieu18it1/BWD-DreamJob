@@ -1,3 +1,116 @@
+#iconkid {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	top: 3%;
+	right: 5%;
+	background-color: #222222;
+	border-radius: 50px;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+	transform: scale(0.7);
+	transition: all 0.4s;
+	z-index: 9999;
+}
+#iconkid:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	background-color: white;
+}
+#iconkid i {
+	font-size: 35px;
+	width: 100%;
+	height: 90%;
+	text-align: center;
+	margin-top: 20%; 
+	color: white;
+	transition: all 0.3s;
+}
+#iconkid:hover i {
+	color: #222222;
+}
+#listkid {
+	width: 200px;
+	height: 280px;
+	position: fixed;
+	top: 7%;
+	right: 7%;
+	z-index: 999;
+	background-color: #444444;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75); 
+}
+.kid1, .kid2 {
+	width: 90%;
+	height: 20%;
+	margin: auto;
+	/*background-color: red;*/
+	margin-top: 5%;
+	position: relative;
+}
+.kid1 img {
+	width: 40%;
+	height: 100%;
+	border-radius: 10px;
+	border: 2px solid white;
+	display: inline-block;
+	position: absolute;
+	left: 10%;
+	z-index: 99999;
+}
+.kid2 img {
+	width: 40%;
+	height: 100%;
+	border-radius: 10px;
+	border: 2px solid white;
+	display: inline-block;
+	position: absolute;
+	right: 10%;
+	z-index: 99999;
+}
+.kid1 .kid-info {
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	right: 2%;
+	/*background-color: blue;*/
+	display: inline-block;
+	background-color: #EEEEEE;
+	border-radius: 10px;
+}
+.kid2 .kid-info {
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	left: 2%;
+	/*background-color: blue;*/
+	display: inline-block;
+	background-color: #EEEEEE;
+	border-radius: 10px;
+}
+.kid-info h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	margin-top: 5%;
+	font-weight: bold;
+}
+.kid-info h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-align: center;
+	margin-top: 0%;
+	/*font-weight: bold;*/
+	/*padding: 2% 0%;*/
+	/*border-bottom: 1px solid white;*/
+}
 #profilehead {
 	width: 40%;
 	height: 300px;
@@ -585,26 +698,12 @@ td a:hover {
 }
 #infokid-02 table {
 	width: 80%;
-	height: 50%;
+	height: 40%;
 	margin: auto;
 	margin-top: 5%;
-	border-bottom: 1px solid white;
+	/*border-bottom: 1px solid white;*/
 	color: white;
-}
-#iconinfo {
-	width: 100%;
-	height: 40%;
-	margin-top: 5%;
-	/*background-color: white;*/
-}
-#iconinfo a i {
-	color: white;
-	font-size: 30px;
-	margin: 2% 7%;
-	transition: all 0.3s
-}
-#iconinfo a i:hover {
-	transform: scale(1.2);
+	font-size: 14px;
 }
 #intelligent {
 	width: 100%;
@@ -615,9 +714,11 @@ td a:hover {
 	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 }
 #chartline {
-	width: 100%;
-	height: 100%;
+	width: 60%;
+	height: 90%;
 	float: left;
+	margin-left: 5%;
+	margin-top: 5%;
 	/*background-color: red;*/
 }
 .titlesmart {
