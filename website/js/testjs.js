@@ -6,9 +6,11 @@ function showhide() {
 	var ct = document.querySelector("#div01 h2");
 	if (btn.getAttribute("value") == "Show") {
 		btn.setAttribute("value","Hide");
+		btn.style.backgroundColor = "#3399FF";
 	}
 	else {
 		btn.setAttribute("value","Show");
+		btn.style.backgroundColor = "#9966CC";
 	}
 	if (ct.getAttribute("class") == "show") {
 		ct.setAttribute("class", "hide");
@@ -109,3 +111,36 @@ function conf() {
 			var a = cal();
 			console.log(a(10,20));
 		};
+function ptb2() {
+	// body...
+	
+	var docA = document.getElementById("txtA").value;
+	var docB = document.getElementById("txtB").value;
+	var docC = document.getElementById("txtC").value;
+
+	if (docA == "" || docB == "" || docC == "") {
+		document.getElementById("err").style.display = "inline-block";
+	}
+	else {
+		document.getElementById("err").style.display = "none";
+
+		var a = parseInt(docA);
+		var b = parseInt(docB);
+		var c = parseInt(docC);
+
+		var d = b*b-4*a*c;
+
+		var txtX1 = document.getElementById("x1");
+		var txtX2 = document.getElementById("x2");  
+		if (d < 0) {
+			txtX1.setAttribute("value","Vô Nghiệm");
+			txtX2.setAttribute("value","Vô Nghiệm");
+		}
+		else {
+			var x1 = (-b-Math.sqrt(d))/(2*a);
+			var x2 = (-b+Math.sqrt(d))/(2*a);
+			txtX1.setAttribute("value", x1.toString());
+			txtX2.setAttribute("value", x2.toString());
+		}
+	}
+}

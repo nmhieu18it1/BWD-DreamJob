@@ -5,7 +5,7 @@
 	<title>Test JavaScript</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../img/slide/index-01-01.png" />
 	<style type="text/css">
-		input {
+		.input {
 			width: 100px;
 			height: 30px;
 			background-color: #3399FF;
@@ -18,16 +18,17 @@
 			outline: none;
 			transition: all 0.3s;
 		}
-		input:hover {
+		.input:hover {
 			transform: scale(1.2);
 		}
 		#div01 {
-			width: 700px;
-			height: 400px;
-			margin: auto;
+			width: 500px;
+			height: 300px;
+			display: inline-block;
 			background-color: #DDDDDD;
 			border: 2px solid black;
 			border-radius: 10px;
+			float: left;
 		}
 		.show {
 			display: inline-block;
@@ -35,27 +36,94 @@
 		.hide {
 			display: none;
 		}
+		#txtA, #txtB, #txtC, #x1, #x2 {
+			width: 100px;
+			height: 30px;
+			background: white;
+			border: 1px solid black;
+			border-radius: 10px;
+			margin-top: 20px;
+			margin-left: 20px;
+			outline: none;
+			text-align: center;
+		}
+		#formptb2 {
+			width: 500px;
+			height: 300px;
+			background-color: #DDDDDD;
+			display: inline-block;
+			float: left;
+			margin-left: 20px;
+			border: 4px dotted black;
+			border-radius: 10px;
+			position: relative;
+		}
+		.in {
+			font-size: 18px; 
+			font-weight: bold; 
+			text-align: center; 
+			padding: 10px 0px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		#cal {
+			width: 150px;
+			height: 40px;
+			right: 50px;
+			top: 115px;
+			position: absolute;
+			background-color: #3399FF;
+			border: none;
+			border-radius: 20px;
+			outline: none;
+			cursor: pointer;
+			color: white;
+			font-weight: bold;
+			transition: all 0.3s;
+		}
+		#cal:hover {
+			transform: scale(1.1);
+		}
 	</style>
 </head>
 <body>
 
-	<input type="button" name="" onclick="conf();" value="Confirm">
-	<input type="button" name="" onclick="prom();" value="Prompt">
-	<input type="button" name="" onclick="love();" value="String">
-	<input type="button" name="" onclick="datelog();" value="Date">
-	<input type="button" name="" onclick="arr();" value="Array">
-	<input type="button" name="" onclick="calcu();" value="Cal">
-	<input type="button" name="" onclick="inner();" value="Div">
+	<input type="button" name="" onclick="conf();" value="Confirm" class="input">
+	<input type="button" name="" onclick="prom();" value="Prompt" class="input">
+	<input type="button" name="" onclick="love();" value="String" class="input">
+	<input type="button" name="" onclick="datelog();" value="Date" class="input">
+	<input type="button" name="" onclick="arr();" value="Array" class="input">
+	<input type="button" name="" onclick="calcu();" value="Cal" class="input">
+	<input type="button" name="" onclick="inner();" value="Div" class="input">
 	<div id="div01">
 		<h1>Hello Guys !</h1>
-		<input type="button" name="" onclick="showhide();" value="Hide" id="btnshowhide">
+		<input type="button" name="" onclick="showhide();" value="Hide" id="btnshowhide" class="input">
 		<h2 class="show">Today is a good day !</h2>
 		<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		consequat.</p>
+	</div>
+	<div id="div02">
+		<form id="formptb2">
+			<label style="font-size: 18px; font-weight: bold; text-align: center; display: block; padding: 10px 0px;">Chương trình tính phương trình bậc 2: ax^2 + bx + c = 0</label>
+			<br>
+			<label class="in">Nhập a:</label>
+			<input type="text" name="" id="txtA">
+			<br>
+			<label class="in">Nhập b:</label>
+			<input type="text" name="" id="txtB" required="">
+			<br>
+			<label class="in">Nhập c:</label>
+			<input type="text" name="" id="txtC" required="">
+			<br>
+			<label class="in">x1:</label>
+			<input type="text" name="" id="x1" value="">
+			<label class="in">x2:</label>
+			<input type="text" name="" id="x2" value="">
+			<label style="display: none; color: #FF6666; position: absolute; top: 170px; right: 50px; font-weight: bold;" id="err">Vui lòng nhập a, b, c.</label>
+			<input type="button" name="" value="Tính" id="cal" onclick="ptb2();">
+		</form>
 	</div>
 <script type="text/javascript" src="../js/testjs.js"></script>
 </body>
