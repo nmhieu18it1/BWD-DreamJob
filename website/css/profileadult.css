@@ -32,8 +32,8 @@
 	color: #222222;
 }
 #listkid {
-	width: 200px;
-	height: 280px;
+	width: 0px;
+	height: 0px;
 	position: fixed;
 	top: 7%;
 	right: 7%;
@@ -41,6 +41,7 @@
 	background-color: #444444;
 	border-radius: 10px;
 	overflow: hidden;
+	transition: all 0.5s;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75); 
@@ -61,7 +62,7 @@
 	display: inline-block;
 	position: absolute;
 	left: 10%;
-	z-index: 99999;
+	z-index: 999;
 }
 .kid2 img {
 	width: 40%;
@@ -93,12 +94,52 @@
 	background-color: #EEEEEE;
 	border-radius: 10px;
 }
+.kid1 i {
+	position: absolute;
+	top: 25%;
+	right: -5%;
+	z-index: 9999;
+	font-size: 20px;
+	color: #0099FF;
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid white;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	transform: scale(0.7);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.kid2 i {
+	position: absolute;
+	top: 25%;
+	left: -5%;
+	z-index: 9999;
+	font-size: 20px;
+	color: #0099FF;
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid white;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	transform: scale(0.7);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.kid1 i:hover, .kid2 i:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	transform: scale(1);
+}
 .kid-info h1 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: black;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 10%;
 	font-weight: bold;
 }
 .kid-info h2 {
@@ -106,7 +147,7 @@
 	font-size: 13px;
 	color: black;
 	text-align: center;
-	margin-top: 0%;
+	/*margin-top: 0%;*/
 	/*font-weight: bold;*/
 	/*padding: 2% 0%;*/
 	/*border-bottom: 1px solid white;*/
