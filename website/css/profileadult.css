@@ -141,6 +141,17 @@
 	text-align: center;
 	margin-top: 10%;
 	font-weight: bold;
+	transition: all 0.3s;
+}
+.kid-info h1 a {
+	color: #0099FF;
+	text-decoration: none;
+}
+.kid-info h1 a:hover {
+	color: #6699FF;
+}
+.kid-info h1:hover {
+	color: #6699FF;
 }
 .kid-info h2 {
 	font-family: Arial, Helvetica, sans-serif;
