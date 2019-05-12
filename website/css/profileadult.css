@@ -991,6 +991,7 @@ td a:hover {
 	height: auto;
 	margin: auto;
 	padding: 2% 0%;
+	text-align: justify;
 }
 #document #img {
 	width: 48%;
