@@ -20,7 +20,7 @@
 
 
 </head>
-<body style="background-color: #f5f2fd;">
+<body style="background-color: #f5f2fd;" onload="time();">
 
 	<div id="head">
 	<!--#profilehead-->
@@ -261,7 +261,19 @@
 		</div>
 
 		<div class="col-24">
-			
+			<div id="clock">
+				<div id="time"></div>
+				<div id="weekday"></div>
+				<div id="date"></div>
+			</div>
+			<div id="event">
+				<div id="titleevent">Sự kiện</div>
+				<div id="contentevent">
+					<h1><a href="">Mua quà</a></h1>
+					<h1><a href="">Sinh nhật bạn</a></h1>
+					<h1><a href="">Viết thư</a></h1>
+				</div>
+			</div>
 		</div>
 		
 	</div><!--contain-90-->
@@ -364,6 +376,49 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+</script>
+<script type="text/javascript">
+function time() {
+   var today = new Date();
+   var weekday=new Array(7);
+   weekday[0]="Sunday";
+   weekday[1]="Monday";
+   weekday[2]="Tuesday";
+   weekday[3]="Wednesday";
+   weekday[4]="Thursday";
+   weekday[5]="Friday";
+   weekday[6]="Saturday";
+   var day = weekday[today.getDay()];
+   var dd = today.getDate();
+   var mm = today.getMonth()+1; //January is 0!
+   var yyyy = today.getFullYear();
+   var h=today.getHours();
+   var m=today.getMinutes();
+   var s=today.getSeconds();
+   m=checkTime(m);
+   s=checkTime(s);
+   if(dd<10){dd='0'+dd} 
+   if(mm<10){mm='0'+mm} 
+   	// today = day+', '+ dd+'/'+mm+'/'+yyyy;
+
+   // document.getElementById("clock").innerHTML=tmp;
+   var nowTime = h+" : "+m+" : "+s;
+	document.getElementById("time").innerHTML=nowTime;
+
+	var datetoday = dd + ' - ' + mm + ' - ' + yyyy;
+	document.getElementById("date").innerHTML=datetoday;
+
+	document.getElementById("weekday").innerHTML=day;
+
+   clocktime=setTimeout("time()","1000","JavaScript");
+   function checkTime(i)
+   {
+      if(i<10){
+     i="0" + i;
+      }
+      return i;
+	}
+}
 </script>
 </body>
 </html>

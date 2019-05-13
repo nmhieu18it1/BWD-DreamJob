@@ -1018,3 +1018,164 @@ td a:hover {
 	color: #0099FF;
 	margin: 1% 0%;
 }
+#clock {
+	width: 45%;
+	height: 20%;
+	margin-left: 5%;
+	background-color: #3399FF;
+	float: left;
+	position: relative;
+	transform: rotate(-1deg);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#event {
+	width: 45%;
+	height: 20%;
+	margin-left: 5%;
+	background-color: #9966CC;
+	float: left;
+	position: relative;
+	transform: rotate(3deg);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#clock:before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	top: 5%;
+	left: 5%;
+}
+#clock:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	top: 5%;
+	right: 5%;
+}
+#event:before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	top: 5%;
+	left: 5%;
+}
+#event:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	top: 5%;
+	right: 5%;
+}
+#time {
+	width: 85%;
+	height: 25%;
+	margin: auto;
+	/*background-color: blue;*/
+	margin-top: 25%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: 4px double white;
+	border-radius: 10px;
+}
+#weekday {
+	width: 70%;
+	height: 15%;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	/*background-color: blue;*/
+}
+#date {
+	width: 90%;
+	height: 15%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	/*background-color: blue;*/
+}
+#titleevent {
+	width: 70%;
+	height: 22%;
+	margin: auto;
+	/*background-color: blue;*/
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 3px dotted white;
+}
+#contentevent {
+	width: 90%;
+	height: 60%;
+	margin: auto;
+	margin-top: 5%;
+	/*background-color: blue;*/
+}
+#contentevent h1 {
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	text-align: center;
+	display: inline-block;
+	font-size: 13px;
+	/*background-color: red;*/
+	position: relative;
+	transition: all 0.3s;
+}
+#contentevent h1:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 10px;
+	border: 1.5px solid white;
+	top: 5px;
+	left: 0;
+}
+#contentevent h1 a {
+	color: white;
+	text-decoration: none;
+}
+#contentevent h1:hover {
+	transform: scale(1.1);
+	font-weight: bold;
+}
