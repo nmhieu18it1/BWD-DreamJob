@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
+
 </head>
 <body style="background-color: #b5b1ff4d;">
 
@@ -64,7 +67,8 @@
 			
 		</div><!--#headstart-->
 
-		<div id="slide">
+		<div class="owl-carousel owl-theme" style="width: 90%;height: auto; margin: auto; margin-top: 5%; background-color: white;-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);">
+
 			<div class="slideitem">
 				<img src="../img/slide/index-01-01.png">
 				<h1><a href="">Mục Đích&#160&#160&#160<i class="far fa-clone"></i></a></h1>
@@ -80,7 +84,8 @@
 				<h1><a href="">Quà Tặng&#160&#160&#160<i class="far fa-clone"></i></a></h1>
 				<h2>" Tham gia cùng chúng tôi để có cơ hội nhận những phần quà hấp dẫn ... "</h2>
 			</div>
-		</div>
+	   
+	     </div>
 
 		<div id="headgame">
 			<div id="icongame"></div>
@@ -420,6 +425,33 @@ $("#lienhe").click(function(e) {
     // Call the scroll function
     goToByScroll("contact");
 });
+</script>
+<script type="text/javascript">
+		function dialoggift() {
+			// body...
+			alert("Cảm ơn bạn đã tham gia! Chúng tôi sẽ gửi đến bạn món quà sớm nhất !");
+		}
+</script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav: true,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 </script>
 </body>
 </html>
