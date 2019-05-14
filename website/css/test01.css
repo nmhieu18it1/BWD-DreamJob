@@ -22,5 +22,17 @@
 	background-color: green;
 	transform: scale(1.1);
 	transition: all 0.5s;
+	z-index: 1;
 	/*opacity: 0;*/
+}
+#formsignup {
+	position: absolute;
+	right: 20%;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	background-color: red;
+	transform: scale(1.1);
+	transition: all 0.5s;
+	opacity: 0;
 }
