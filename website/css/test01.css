@@ -1,0 +1,26 @@
+#contain-signin {
+	width: 90%;
+	height: 500px;
+	margin: auto;
+	background-color: #CCCCFF;
+	margin-top: 50px;
+	position: relative;
+}
+#signin {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	background-color: blue;
+	position: relative;
+}
+#formsignin {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	background-color: green;
+	transform: scale(1.1);
+	transition: all 0.5s;
+	/*opacity: 0;*/
+}
