@@ -12,16 +12,20 @@ function form01() {
 		// body...
 		f1.style.opacity = '1';
 		f1.style.right = '0';
+		f1.style.zIndex = '999';
 		f2.style.opacity = '0';
-		f2.style.right = '20%';
+		f2.style.right = '30%';
+		f2.style.zIndex = '0';
 		change.setAttribute('value','Sign Up');
 	}
 	function hide(f1,f2) {
 		// body...
 		f1.style.opacity = '0';
-		f1.style.right = '20%';
+		f1.style.right = '30%';
+		f1.style.zIndex = '0';
 		f2.style.opacity = '1';
 		f2.style.right = '0';
+		f2.style.zIndex = '999';
 		change.setAttribute('value','Sign In');
 	}
 };
