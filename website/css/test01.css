@@ -31,26 +31,19 @@
 }
 #formsignin h1 {
 	display: block;
-	/*width: 100%;*/
+	width: 60%;
 	height: auto;
-	margin-top: 10%;
+	margin: auto;
+	margin-top: 15%;
 	font-size: 30px;
 	font-weight: bold;
+	border-bottom: 3px solid #531EEF;
 	/*background-color: red;*/
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #531EEF;
 }
-select {
-	width: 100px;
-}
-#scroll {
-	height: 50px;
-	width: 80px;
-	background-color: red;
-	overflow: none;
-}
-#formsignin input {
+.input {
 	display: block;
 	width: 50%;
 	height: 30px;
@@ -66,11 +59,22 @@ select {
 }
 #formsignin input[type="button"] {
 	display: block;
-	width: 50%;
+	width: 25%;
 	height: 30px;
 	text-align: left;
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 15%;
+	text-align: center;
+	border-radius: 20px;
+	border: none;
+	background-color: #531EEF;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.4s;
+}
+#formsignin input[type="button"]:hover {
+	border-radius: 0;
 }
 #formsignup {
 	position: absolute;
