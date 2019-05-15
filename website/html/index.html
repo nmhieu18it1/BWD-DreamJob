@@ -4,7 +4,10 @@
 
 	<title>Trang Chủ - Ước Mơ</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediaindex.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,7 +21,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
 
 </head>
-<body style="background-color: #b5b1ff4d;">
+<body style="background-color: white;">
+
+	<div id="backtop">
+		<i class="fas fa-paper-plane" onmouseover="summory();" id="totop" onmouseout="hidesummory();"></i>
+		<p>Về đầu trang</p>
+	</div>
 
 	<!--.contain-80-->
 	<div class="contain-80">
@@ -30,20 +38,34 @@
 				<div id="logo">
 					<a href="">
 						<h1>DreamJob</h1>
-						
 					</a>
 					<h2>&#160&#160Ước mơ của bé.</h2>
 				</div>
 
 				<div id="menu">
 					
-					<ul>
-						<li><a href="" style="font-weight: bold; color: #8a31e2;">Thông Tin</a></li>
-						<li><a href="" id="hotro">Hỗ Trợ</a></li>
+					<ul style="display: flex; justify-content: space-around;">
+						<!-- <li><input type="button" name="" value="Click" onclick="showmenures();"></li> -->
+						<li><a href="" id="hotro" style="font-weight: bold; color: #8a31e2;">Hỗ Trợ</a></li>
 						<li><a href="" id="lienhe">Liên Hệ</a></li>
-						<li><a href="test01.html" target="_blank">Đăng Nhập</a></li>
+<<<<<<< HEAD
+						<li><a href="signin.html" target="_blank">Đăng Nhập</a></li>
+=======
+						<li><a href="signin.html" target="_blank">Đăng Nhập</a></li>
+>>>>>>> 49ad0ca51e2562d43632ccf458abac99a9f0d745
 					</ul>
 
+				</div>
+				<div id="iconmenu">
+						<i class="fas fa-bars" onclick="showmenures();"></i>
+				</div>
+				<div id="menures" onblur="hidemenures();">
+					<a href="" id="hotro01" onclick="hidemenures();">Hỗ Trợ</a>
+					<a href="" id="lienhe01" onclick="hidemenures();">Liên Hệ</a>
+					<a href="" id="mucdich01" onclick="hidemenures();">Mục Đích</a>
+					<a href="" id="huongdan01" onclick="hidemenures();">Hướng Dẫn</a>
+					<a href="" id="quatang01" onclick="hidemenures();">Quà Tặng</a>
+					<a href="signin.html" target="_blank" onclick="hidemenures();">Đăng Nhập</a>
 				</div>
 
 			</div><!--#menubar-->
@@ -52,11 +74,11 @@
 
 				<div id="hbtitle">
 					<h1>Ước Mơ Của Bạn Là Gì ?</h1><br>
-					<h1 style="font-size: 24px;"><!-- &#160&#160&#160 -->Cùng tham gia những trò chơi thú vị thôi nào.</h1>
+					<h1 style="font-size: 24px;">Cùng tham gia những trò chơi thú vị thôi nào.</h1>
 				</div>
 
 				<div id="hbcontent">
-					<p><!-- &#160&#160&#160 -->Hàng ngàn trò chơi thú vị cùng những phần quá vô cùng hấp dẫn đang chờ các bạn. <br>Nào mình cùng đi.</p>
+					<p>&#160&#160&#160 Hàng ngàn trò chơi thú vị cùng những phần quá vô cùng hấp dẫn đang chờ các bạn. <br>Nào mình cùng đi.</p>
 				</div>
 
 				<div id="hblestgo">
@@ -67,7 +89,7 @@
 			
 		</div><!--#headstart-->
 
-		<div class="owl-carousel owl-theme" style="width: 90%;height: auto; margin: auto; margin-top: 5%; background-color: white;-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);">
+		<div id="slide">
 
 			<div class="slideitem">
 				<img src="../img/slide/index-01-01.png">
@@ -103,7 +125,7 @@
 					<div class="gameitem">
 						<a href="playgame.html"><img src="../img/game/1.png"></a>
 						<div class="overlay">
-							<h1><a href="">Liên quân Online</a></h1>
+							<h1><a href="">Bóng Đá Chiến Thuật</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 38</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 75</h2>
 							<center>
@@ -114,7 +136,7 @@
 					<div class="gameitem">
 						<a href="playgame.html"><img src="../img/game/2.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Tom - Gold Run</a></h1>
+							<h1><a href="">Tô màu cùng bé</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 92</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 162</h2>
 							<center>
@@ -125,7 +147,7 @@
 					<div class="gameitem">
 						<a href="playgame.html"><img src="../img/game/3.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Boom</a></h1>
+							<h1><a href="">Dọn Nhà Giúp Mẹ</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 50</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 60</h2>
 							<center>
@@ -136,7 +158,7 @@
 					<div class="gameitem">
 						<a href="playgame.html"><img src="../img/game/5.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">PlantWar2</a></h1>
+							<h1><a href="">Khu vườn Tươi Vui</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 10</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 35</h2>
 							<center>
@@ -145,9 +167,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/3.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/7.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Boom</a></h1>
+							<h1><a href="">Xây Dựng Thành Phố</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 50</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 60</h2>
 							<center>
@@ -156,9 +178,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/5.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/8.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">PlantWar2</a></h1>
+							<h1><a href="">Làm Bánh</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 10</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 35</h2>
 							<center>
@@ -167,9 +189,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/4.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/9.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Pokemon</a></h1>
+							<h1><a href="">Chăm Sóc Bé Yêu</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 100</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 245</h2>
 							<center>
@@ -178,9 +200,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/4.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/10.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Pokemon</a></h1>
+							<h1><a href="">Thử Tài Thời Trang</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 100</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 245</h2>
 							<center>
@@ -189,9 +211,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/5.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/11.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">PlantWar2</a></h1>
+							<h1><a href="">Quản Lý Nhà Hàng</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 10</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 35</h2>
 							<center>
@@ -200,9 +222,9 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/4.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/12.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Pokemon</a></h1>
+							<h1><a href="">Bếp Trưởng</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 100</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 245</h2>
 							<center>
@@ -211,9 +233,9 @@
 						</div>
 					</div>
 						<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/5.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/13.png"></a>
 						<div class="overlay">
-							<h1><a href="">PlantWar2</a></h1>
+							<h1><a href="">Giáo Viên Dạy Học</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 10</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 35</h2>
 							<center>
@@ -222,9 +244,42 @@
 						</div>
 					</div>
 					<div class="gameitem">
-						<a href="playgame.html"><img src="../img/game/2.jpg"></a>
+						<a href="playgame.html"><img src="../img/game/14.jpg"></a>
 						<div class="overlay">
-							<h1><a href="">Tom - Gold Run</a></h1>
+							<h1><a href="">Tài Xế Xe Tải</a></h1>
+							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 92</h2>
+							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 162</h2>
+							<center>
+							<a href="" class="playnow">Chơi ngay</a>
+							</center>
+						</div>
+					</div>
+					<div class="gameitem">
+						<a href="playgame.html"><img src="../img/game/15.jpg"></a>
+						<div class="overlay">
+							<h1><a href="">Bác Sĩ Nha Khoa</a></h1>
+							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 92</h2>
+							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 162</h2>
+							<center>
+							<a href="" class="playnow">Chơi ngay</a>
+							</center>
+						</div>
+					</div>
+					<div class="gameitem">
+						<a href="playgame.html"><img src="../img/game/16.jpg"></a>
+						<div class="overlay">
+							<h1><a href="">Xây Cầu Thông Minh</a></h1>
+							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 92</h2>
+							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 162</h2>
+							<center>
+							<a href="" class="playnow">Chơi ngay</a>
+							</center>
+						</div>
+					</div>
+					<div class="gameitem">
+						<a href="playgame.html"><img src="../img/game/17.jpg"></a>
+						<div class="overlay">
+							<h1><a href="">Nông trại vui vẻ</a></h1>
 							<h2><i class="fas fa-heart" style="color: #FF3333;"></i>&#160 92</h2>
 							<h2><i class="fas fa-play" style="color: #FFFF33;"></i>&#160 162</h2>
 							<center>
@@ -294,6 +349,35 @@
 			
 		</div>
 
+		<div id="guide">
+			<div id="menuguide">
+				<div class="menuguide-select">
+					<a href="">1</a>
+					<h1 onclick="mucdich();">Mục Đích</h1>
+				</div>
+				<div class="menuguide-select">
+					<a href="">2</a>
+					<h1 onclick="huongdan();">Hướng Dẫn</h1>
+				</div>
+				<div class="menuguide-select">
+					<a href="">3</a>
+					<h1 onclick="quatang();">Quà Tặng</h1>
+				</div>
+			</div>
+			<div id="contentguide">
+				<div id="navguide">
+					<h1 id='canhan' onclick="intext(this);">Cá nhân</h1>
+					<h1 id='xahoi' onclick="intext(this);">Xã hội</h1>
+				</div>
+				<div id="content">
+						<h1>Mục Đích của Website</h1>
+						<p>
+							Giúp mọi người có thể hiểu biết về bản thân mình hơn để có thể tìm ra đam mê của chính mình.
+						</p>
+			</div>
+			</div>
+		</div>
+
 		<div id="contact">
 
 			<h1>Kết nối với Chúng tôi</h1>
@@ -324,11 +408,11 @@
 				<div id="contacticons">
 
 					<ul>
-						<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href=""><i class="fab fa-instagram"></i></a></li>
-						<li><a href=""><i class="fab fa-youtube"></i></i></a></li>
-						<li><a href=""><i class="fab fa-twitter-square"></i></i></a></li>
-						<li><a href=""><i class="fas fa-envelope-square"></i></a></li>
+						<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></i></a></li>
+						<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></i></a></li>
+						<li><a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
 					</ul>
 					
 				</div>
@@ -348,7 +432,7 @@
 			<div id="inputemail">
 				<input type="email" name="" id="email" placeholder="Email của bạn...">
 				<input type="submit" name="" id="submit" value="">
-				<a href="" id="emailicon"><i class="far fa-envelope"></i></a>
+				<a href="" id="emailicon" onclick="conf();"><i class="far fa-envelope"></i></a>
 			</div>
 		</div>
 
@@ -356,23 +440,23 @@
 			<h1>DreamJob Team</h1>
 			<div class="team1" style="background-image: url(../img/team/quymanh-01.png); margin-left: 10%;">
 				<ul>
-					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.facebook.com/manhcoo" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
 					<li><a href=""><i class="fab fa-instagram"></i></a></li>
-					<li><a href=""><i class="fab fa-youtube"></i></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UC9369CxZmkHltqL22q5n_sQ" target="_blank"><i class="fab fa-youtube"></i></i></a></li>
 				</ul>
 			</div>
 
 			<div class="team1" style="background-image: url(../img/team/phuocdai-01.png);">
 				<ul>
-					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/dai2801" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.instagram.com/ledai010120/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 					<li><a href=""><i class="fab fa-youtube"></i></i></a></li>
 				</ul>
 			</div>
 
 			<div class="team1" style="background-image: url(../img/team/minhhieu-01.png);">
 				<ul>
-					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.facebook.com/nmhieu0809" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
 					<li><a href=""><i class="fab fa-instagram"></i></a></li>
 					<li><a href=""><i class="fab fa-youtube"></i></a></li>
 				</ul>
@@ -425,6 +509,24 @@ $("#lienhe").click(function(e) {
     // Call the scroll function
     goToByScroll("contact");
 });
+$("#hotro01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("guide");
+});
+$("#lienhe01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("contact");
+});
+$("#totop").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("headstart");
+});
 </script>
 <script type="text/javascript">
 		function dialoggift() {
@@ -437,7 +539,7 @@ $("#lienhe").click(function(e) {
 <script type="text/javascript">
 	$('.owl-carousel').owlCarousel({
     loop:true,
-    margin:20,
+    margin:10,
     nav: true,
     autoplay: true,
     responsive:{
@@ -453,5 +555,6 @@ $("#lienhe").click(function(e) {
     }
 })
 </script>
+<script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>
