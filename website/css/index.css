@@ -414,7 +414,7 @@ body {
 	overflow: auto;
 }
 .gameitem {
-	width: 15%;
+	width: 20%;
 	height: 20%;
 	margin: 2% 2%;
 	background-color: pink;
@@ -439,10 +439,10 @@ body {
 .overlay h1 {
 	color: white;
 	font-family(stack): Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	margin-top: 18%;
 	/*background-color: red;*/
