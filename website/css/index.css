@@ -69,7 +69,7 @@ body {
 	text-decoration: none;
 }
 #menubar #menu {
-	width: 50%;
+	width: 30%;
 	height: 100%;
 	/*background-color: green;*/
 	float: right;
@@ -90,7 +90,7 @@ body {
 }
 #menu ul li a {
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 17px;
 	color: #6400ff;
 }
 #headbody {
@@ -184,22 +184,22 @@ body {
 }
 .slideitem {
 	width: 100%;
-	height: 100%;
-	
+	height: auto;
 	/*background-color: blue;*/
 	transform: scale(0.6);
-	transition: ease-in-out all 0.4s;
+	transition: ease-in-out all 0.5s;
 }
 .slideitem:hover {	
-	transform: scale(0.7);
+	transform: scale(0.8);
 	background-color: white;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	cursor: pointer;
+	/*-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
-	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);*/
 }
 .slideitem img {
 	width: 70%;
-	height: 65%;
+	height: 70%;
 	margin: auto;
 	/*background-color: green;*/
 	display: block;
@@ -221,7 +221,7 @@ body {
 	margin: auto;
 	text-align: center;
 	margin-top: 6%;
-	font-size: 25px;
+	font-size: 23px;
 	/*font-weight: bold;*/
 	color: #5433ff;
 	margin-bottom: 5%;

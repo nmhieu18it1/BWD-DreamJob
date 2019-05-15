@@ -37,11 +37,10 @@
 
 				<div id="menu">
 					
-					<ul>
-						<li><a href="" style="font-weight: bold; color: #8a31e2;">Thông Tin</a></li>
-						<li><a href="" id="hotro">Hỗ Trợ</a></li>
+					<ul style="display: flex; justify-content: space-around;">
+						<li><a href="" id="hotro" style="font-weight: bold; color: #8a31e2;">Hỗ Trợ</a></li>
 						<li><a href="" id="lienhe">Liên Hệ</a></li>
-						<li><a href="singin.html" target="_blank">Đăng Nhập</a></li>
+						<li><a href="signin.html" target="_blank">Đăng Nhập</a></li>
 					</ul>
 
 				</div>
@@ -67,7 +66,7 @@
 			
 		</div><!--#headstart-->
 
-		<div class="owl-carousel owl-theme" style="width: 90%;height: auto; margin: auto; margin-top: 5%; background-color: white;-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);">
+		<div id="slide">
 
 			<div class="slideitem">
 				<img src="../img/slide/index-01-01.png">
@@ -437,7 +436,7 @@ $("#lienhe").click(function(e) {
 <script type="text/javascript">
 	$('.owl-carousel').owlCarousel({
     loop:true,
-    margin:20,
+    margin:10,
     nav: true,
     autoplay: true,
     responsive:{
