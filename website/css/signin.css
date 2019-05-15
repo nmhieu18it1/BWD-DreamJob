@@ -7,12 +7,16 @@
 	position: relative;
 }
 #signin {
+
+	background-image: url(../img/signin.jpg);
 	width: 90%;
 	height: 100%;
-	margin: auto;
 
+	margin: auto;
+	display: block;
 	/*background-color: blue;*/
-	position: relative;
+	position: relative;	
+
 }
 #formsignin {
 	position: absolute;
