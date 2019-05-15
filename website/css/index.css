@@ -636,13 +636,14 @@ body {
 }
 #gametop01 #list {
 	width: 90%;
-	height: 200px;
+	height: 220px;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 40px;
 	/*background-color: blue;*/
-	/*display: flex;
-	justify-content: space-around;*/
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-around;*/
 }
 #list .listitem {
 	width: 22%;

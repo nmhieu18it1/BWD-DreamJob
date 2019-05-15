@@ -156,4 +156,47 @@
 	#textgame h2 {
 		font-size: 12px;
 	}
+	.gameitem {
+		width: 45%;
+		height: 150px;
+		margin: 10px 2px;
+	}
+	#gamecontent {
+		width: 90%;
+		margin: 20px;
+	}
+	#game {
+		width: 100%;
+		margin-top: 0;
+		height: 600px;
+	}
+	#headgame {
+		margin-bottom: 0px;
+	}
+	#gametop01 #title {
+		width: 100%;
+	}
+	#gametop01 #title h1 {
+		width: 100%;
+		font-size: 20px;
+		padding: 15px 0px;
+		/*background-color: red;*/
+	}
+	#gametop01 #list {
+		width: 90%;
+		height: 150px;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	#list .listitem {
+		width: 50%;
+		height: 100%;
+		margin: auto;
+		margin-top: 10px;
+	}
+	.listitem h1{
+		font-size: 20px;
+		margin-top: 5px;
+	}
 }
