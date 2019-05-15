@@ -65,4 +65,59 @@
 		display: block;
 		width: 100%;
 	}
+	.listitem img {
+		height: 60%;
+	}
+	#gametop01 #list {
+		overflow-x: scroll;
+	}
+	#list .listitem {
+		width: 30%;
+	}
+	.menuguide-select > a {
+		font-size: 30px;
+	}
+	.menuguide-select > h1 {
+		font-size: 20px;
+	}
+	#contentguide #navguide {
+		width: 15%;
+	}
+	#contentguide #content {
+		width: 60%;
+	}
+	#navguide h1 {
+		font-size: 12px;
+	} 
+	#contact {
+		height: 550px;
+	}
+	#contactdeco li {
+		font-size: 20px;
+	}
+	#footerleft h1 {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	#footerleft p  {
+		display: none;
+	}
+	#inputemail {
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+	.team1 {
+		height: 80%;
+		margin-top: 20px;
+	}
+	.team1 ul li a {
+		font-size: 18px;
+	}
+	.team1 ul {
+		left: -25px;
+	}
+	.div-100 p {
+		width: 33%;
+		font-size: 12px;
+	}
 }

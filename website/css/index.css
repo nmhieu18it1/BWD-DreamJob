@@ -606,12 +606,13 @@ body {
 	font-family(stack): Arial, Helvetica, sans-serif;
 }
 #gametop01 {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin: auto;
-	display: none;
+	display: block;
 	/*background-color: blue;*/
 	transform: scale(0.8);
+	display: none;
 	transition: all 0.4s;
 	background-color: white;
 	position: relative;
@@ -633,7 +634,7 @@ body {
 	font-size: 40px;
 	font-weight: bold;
 	color: #0066FF;
-	padding: 30px 0px;
+	padding: 20px 0px;
 }
 #gametop01 #list {
 	width: 90%;
@@ -642,12 +643,13 @@ body {
 	margin-top: 30px;
 	margin-bottom: 40px;
 	/*background-color: blue;*/
-	display: flex;
-	justify-content: space-around;
+	/*display: flex;
+	justify-content: space-around;*/
 }
 #list .listitem {
 	width: 22%;
 	height: 100%;
+	display: inline-block;
 	/*background-color: green;*/
 }
 .listitem img {
@@ -689,6 +691,7 @@ body {
 	/*background-color: red;*/
 	position: relative;
 	margin: auto;
+	padding: 10px 0px;
 }
 .menuguide-select {
 	width: 30%;
@@ -700,7 +703,7 @@ body {
 }
 .menuguide-select > a {
 	display: inline-block;
-	padding: 0% 2%;
+	/*padding: 0% 2%;*/
 	font-size: 40px;
 	font-weight: bold;
 	color: #0099FF;
@@ -964,7 +967,7 @@ body {
 	font-size: 15px;
 }
 #inputemail {
-	width: 40%;
+	width: 230px;
 	height: 40px;
 	/*background-color: white;*/
 	margin: auto;
@@ -1052,6 +1055,8 @@ body {
 	bottom: 10%;
 	/*background-color: red;*/
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 .team1 ul li {
 	display: inline-block;
@@ -1099,7 +1104,8 @@ body {
 }
 .div-100 {
 	width: 100%;
-	display: block;
+	display: flex;
+	justify-content: space-around;
 }
 .div-100 p {
 	/*text-align: center;*/
