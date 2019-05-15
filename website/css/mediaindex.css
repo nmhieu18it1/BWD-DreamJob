@@ -49,4 +49,8 @@
 	#textgame h2 {
 		font-size: 12px;
 	}
+	.gameitem {
+		width: 30%;
+		margin: 1% 1%;
+	}
 }
