@@ -1,13 +1,13 @@
 .contain-90 {
-	width: 90%;
-	margin: auto;
+	width: 100%;
+	height: 200px;
 	position: relative;
+	background-image:url(../img/hd.png);
 }
 #menubar {
 	width: 80%;
 	height: 100px;
 	margin: auto;
-	margin-top: 1%;
 	position: relative;
 	/*background-color: red;*/
 }
@@ -23,10 +23,9 @@
 	font-size: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	color: #6633CC;
+	color: #5d3a97;
 	/*position: absolute;*/
 	/*top: 30%;*/
-	margin-top: 10%;
 	display: inline-block;
 	/*left: 5%;*/
 	/*background-color: red;*/
@@ -35,10 +34,11 @@
 	font-size: 25px;
 	font-family: Arial, Helvetica, sans-serif;
 	/*font-weight: bold;*/
-	color: #9933FF;
-	margin-top: 10%;
+	color: #5d3a97;
 	display: inline-block;
+	line-height: 100px;
 }
+
 #menubarright {
 	width: 40%;
 	height: 100%;
@@ -46,7 +46,7 @@
 	/*background-color: red;*/
 }
 #menubarright ul {
-	margin-top: 12%;
+	line-height: 100px;
 }
 #menubarright ul li {
 	display: inline-block;
@@ -55,14 +55,14 @@
 #menubarright ul li a {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #42ACE4;
+	color: #ffffff;
 	text-decoration: none;
 }
 #left {
 	width: 65%;
 	/*background-color: green;*/
 	position: relative;
-	margin-top: 2%;
+	margin-top: 1%;
 	margin-left: 5%;	
 	float: left;
 }
@@ -113,17 +113,46 @@
 	color: white;
 }
 #right {
-	width: 20%;
+	width: 25%;
 	height: 500px;
 	/*background-color: red;*/
 	float: left;
-	margin-left: 5%;
-	margin-top: 2%;
+	margin-left: 3%;
+	margin-top: 1%;
 	background-color: white;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	overflow:auto;
+	overflow-y: auto;
 }
 #right h1 {
+	background-color: #9676ca;
+	font-size: 25px;
+	font-family: "Palatino";
+	text-align: center;
+	border-bottom: solid 3px #b3acbe;
 	
+}
+#right ul{
+	list-style: none;
+	padding: 0px;
+}
+#right li{
+	padding-bottom: 10px;
+	padding-top: 7px;
+	border-bottom: solid 1px #b3acbe;
+
+
+}
+#right img{
+	width: 90px;
+	height: 60px;
+	margin-left: 15px;
+}
+#right p{
+	float:left;
+}
+#right a{
+	margin-left: 15px;
 }
