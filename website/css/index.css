@@ -587,7 +587,7 @@ body {
 }
 #guide {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	background-color: red;
 	position: relative;
 	margin-top: 4%;
@@ -602,40 +602,102 @@ body {
 	height: 70px;
 	display: flex;
 	justify-content: space-around;
-	background-color: red;
+	/*background-color: red;*/
 	position: relative;
 	margin: auto;
 }
 .menuguide-select {
 	width: 30%;
 	height: 100%;
-	margin-top: 1%;
-	background-color: blue;
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+	/*background-color: blue;*/
 }
 .menuguide-select > a {
 	display: inline-block;
-	padding: 1% 5%;
-	font-size: 30px;
+	padding: 0% 2%;
+	font-size: 40px;
 	font-weight: bold;
-	color: white;
-	text-decoration: none;
-	background-color: #0099FF;
-	border-radius: 30px;
+	color: #0099FF;
+	height: 50%;
+	text-decoration: underline;
+	/*background-color: #0099FF;*/
+	/*border-radius: 30px;*/
 }
 .menuguide-select > a:hover {
-	color: white;
-	text-decoration: none;
+	color: #0099FF;
 }
 .menuguide-select > h1 {
 	display: inline-block;
-	font-size: 25px;
+	color: #24A7FF;
+	font-size: 30px;
 	margin-left: 20px;
+	cursor: pointer;
 	font-family(stack): Arial, Helvetica, sans-serif;
 }
-.menuguide-select > h1 a {
-	color: #9999FF;
-	font-family(stack): Arial, Helvetica, sans-serif;
-	text-decoration: none;
+#contentguide {
+	width: 100%;
+	height: auto;
+	display: block;
+	/*float: right;*/
+	/*position: relative;*/
+	margin-top: 3%;
+	margin-bottom: 30px;
+	/*background-color: blue;*/
+	display: flex;
+	justify-content: center;
+}
+#contentguide p {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+#contentguide #navguide {
+	width: 10%;
+	height: auto;
+	/*background-color: green;*/
+	display: inline;
+}
+#navguide h1 {
+	font-size: 15px;
+	color: white;
+	padding: 10px 0px;
+	font-weight: bold;
+	background-color: #3399FF;
+	/*border: 1px solid #666666;*/
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	text-align: center;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+#contentguide #content {
+	width: 70%;
+	height: 550px;
+	background-color: white;
+	display: inline;
+	margin-bottom: 30px;
+	overflow: auto;
+	border: 3px solid #3399FF;
+	transition: all 0.4s;
+	text-align: justify;
+}
+#contentguide input {
+	width: 50px;
+	height: 50px;
+}
+#content p {
+	padding: 20px;
+	margin: 0;
+}
+#content h1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
 }
 #contact {
 	width: 100%;

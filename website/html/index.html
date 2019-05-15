@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
 
 </head>
-<body style="background-color: white;">
+<body style="background-color: white;" onload="khung();">
 
 	<div id="backtop">
 		<i class="fas fa-paper-plane" onmouseover="summory();" id="totop" onmouseout="hidesummory();"></i>
@@ -335,14 +335,28 @@
 			<div id="menuguide">
 				<div class="menuguide-select">
 					<a href="">1</a>
-					<h1><a href="">Mục Đích</a></h1>
+					<h1 onclick="mucdich();">Mục Đích</h1>
 				</div>
 				<div class="menuguide-select">
-					
+					<a href="">2</a>
+					<h1 onclick="huongdan();">Hướng Dẫn</h1>
 				</div>
 				<div class="menuguide-select">
-					
+					<a href="">3</a>
+					<h1 onclick="quatang();">Quà Tặng</h1>
 				</div>
+			</div>
+			<div id="contentguide">
+				<div id="navguide">
+					<h1 id='canhan'>Cá nhân</h1>
+					<h1 id='xahoi'>Xã hội</h1>
+				</div>
+				<div id="content">
+						<h1>Mục Đích của Website</h1>
+						<p>
+							Giúp mọi người có thể hiểu biết về bản thân mình hơn để có thể tìm ra đam mê của chính mình.
+						</p>
+			</div>
 			</div>
 		</div>
 
