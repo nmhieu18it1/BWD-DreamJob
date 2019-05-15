@@ -107,13 +107,14 @@
 	height: auto;
 	margin: auto;
 	text-align: center;
-	font-size: 15px;
+	font-size: 13px;
 	color: #666666;
 	margin-top: 8%;
 }
 #formsignin > p span {
 	color: #3399FF;
 	cursor: pointer;
+	font-size: 15px;
 }
 #formsignup {
 	position: absolute;
@@ -162,6 +163,11 @@
 	height: 100%;
 	display: inline-block;
 	text-align: center;
+	border-radius: 5px;
+	outline: none;
+}
+.inputsignin select:focus {
+	border: 1px solid #9933FF;
 }
 #btnsignup {
 	display: block;
