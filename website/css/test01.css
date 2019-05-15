@@ -1,9 +1,9 @@
 #contain-signin {
 	width: 90%;
-	height: 600px;
+	height: 450px;
 	margin: auto;
 	background-color: rgba(68,68,68,0.7);
-	margin-top: 50px;
+	margin-top: 100px;
 	position: relative;
 }
 #signin {
@@ -31,31 +31,57 @@
 }
 #formsignin h1 {
 	display: block;
-	width: 60%;
+	width: 80%;
 	height: auto;
 	margin: auto;
-	margin-top: 15%;
-	font-size: 30px;
+	margin-top: 10%;
+	font-size: 25px;
 	font-weight: bold;
-	border-bottom: 3px solid #531EEF;
+	padding: 3% 0%;
+	/*border-bottom: 5px double #531EEF;*/
 	/*background-color: red;*/
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #531EEF;
 }
-.input {
+.inputsignin {
 	display: block;
 	width: 50%;
 	height: 30px;
-	text-align: left;
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 8%;
+	position: relative;
 	border: none;
 	outline: none;
-	position: relative;
 	border-bottom: 1px solid #A783FE;
+}
+.inputsignin input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	/*margin: auto;
+	margin-top: 10%;*/
+	border: none;
+	outline: none;
+	/*position: relative;*/
+	border-bottom: 1px solid #A783FE;
+	transition: all 0.3s;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
+}
+.inputsignin input:focus {
+	border-bottom: 1px solid #9933FF;
+}
+.inputsignin i {
+	position: absolute;
+	right: 3%;
+	top: 10%;
+	font-size: 18px;
+	color: #757575;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	-webkit-opacity: 0.4;
 }
 #formsignin input[type="button"] {
 	display: block;
@@ -74,7 +100,20 @@
 	transition: all 0.4s;
 }
 #formsignin input[type="button"]:hover {
-	border-radius: 0;
+	transform: scale(1.05);
+}
+#formsignin p {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	font-size: 15px;
+	color: #666666;
+	margin-top: 8%;
+}
+#formsignin > p span {
+	color: #3399FF;
+	cursor: pointer;
 }
 #formsignup {
 	position: absolute;
@@ -93,42 +132,64 @@
 }
 #formsignup h1 {
 	display: block;
-	/*width: 100%;*/
+	width: 80%;
 	height: auto;
-	margin-top: 10%;
-	font-size: 30px;
+	margin: auto;
+	margin-top: 8%;
+	font-size: 25px;
 	font-weight: bold;
+	/*padding: 3% 0%;*/
+	/*border-bottom: 5px double #531EEF;*/
 	/*background-color: red;*/
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #531EEF;
 }
-#formsignup input {
+#formsignup .inputsignin {
 	display: block;
 	width: 50%;
-	height: 30px;
-	text-align: left;
+	height: 25px;
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 6%;
+	position: relative;
 	border: none;
-	border-bottom: 1px solid #A783FE;
-}
-#buttonsign {
-	border-radius: 40px;
-	border: none;
-	background-color: #0099FF;
-	color: white;
-	font-weight: bold;
-	font-size: 15px;
-	width: 120px;
-	padding: 0.5% 0%;
-	cursor: pointer;
-	transition: all 0.3s;
 	outline: none;
-	position: absolute;
-	bottom: 20%;
-	left: 15%;
+	/*background-color: red;*/
+	/*border-bottom: 1px solid #A783FE;*/
 }
-#buttonsign:hover {
-	transform: scale(1.1);
+.inputsignin select {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+#btnsignup {
+	display: block;
+	width: 45%;
+	height: 30px;
+	margin: auto;
+	text-align: left;
+	text-align: center;
+	border-radius: 20px;
+	border: none;
+	background-color: #531EEF;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.4s;
+}
+#returnsignin {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: #666666;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+#returnsignin span {
+	color: #3399FF;
+	cursor: pointer;
+	font-size: 15px;
 }

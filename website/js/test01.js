@@ -1,31 +1,21 @@
-var checkform = 1;
-function form01() {
-	// body...
-	checkform = -checkform;
-	var formsi = document.getElementById('formsignin');
-	var formsu = document.getElementById('formsignup');
-	var change = document.getElementById('buttonsign');
+var formsi = document.getElementById('formsignin');
+var formsu = document.getElementById('formsignup');
 	// alert("Hello");
-	if (checkform == 1) {show(formsi,formsu);}
-	if (checkform == -1) {hide(formsi,formsu);}
-	function show(f1,f2) {
-		// body...
-		f1.style.opacity = '1';
-		f1.style.right = '0';
-		f1.style.zIndex = '999';
-		f2.style.opacity = '0';
-		f2.style.right = '30%';
-		f2.style.zIndex = '0';
-		change.setAttribute('value','Sign Up');
-	}
-	function hide(f1,f2) {
-		// body...
-		f1.style.opacity = '0';
-		f1.style.right = '30%';
-		f1.style.zIndex = '0';
-		f2.style.opacity = '1';
-		f2.style.right = '0';
-		f2.style.zIndex = '999';
-		change.setAttribute('value','Sign In');
-	}
-};
+function show() {
+	// body...
+	formsi.style.opacity = '1';
+	formsi.style.right = '0';
+	formsi.style.zIndex = '999';
+	formsu.style.opacity = '0';
+	formsu.style.right = '30%';
+	formsu.style.zIndex = '0';
+}
+function hide() {
+	// body...
+	formsi.style.opacity = '0';
+	formsi.style.right = '30%';
+	formsi.style.zIndex = '0';
+	formsu.style.opacity = '1';
+	formsu.style.right = '0';
+	formsu.style.zIndex = '999';
+}

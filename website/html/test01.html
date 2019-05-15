@@ -11,16 +11,54 @@
 <body>
 	<div id="contain-signin">
 		<div id="signin">
-			<input type="button" name="" value="Sign Up" onclick="form01();" id="buttonsign">
 			<form id="formsignin">
 				<h1>ĐĂNG NHẬP</h1>
-				<input type="email" name="" placeholder="&#160&#160 Email" id="email" style="margin-top: 20%;" class="input">
+				<div class="inputsignin">
+				<input type="email" name="" placeholder="&#160&#160 Email" id="email" class="input">
+				<i class="fas fa-envelope"></i>
+				</div>
+				<div class="inputsignin">
 				<input type="password" name="" placeholder="&#160&#160 Mật khẩu" id="passwordsignin" class="input">
+				<i class="fas fa-unlock-alt"></i>
+				</div>
 				<input type="button" name="" value="Đăng nhập">
+				<p>Bạn chưa có tài khoản ? <span onclick="hide();">&#160&#160 Đăng ký</span> ngay.</p>
 			</form>
 			<form id="formsignup">
 				<h1>Đăng ký</h1>
-				<input type="text" name="" placeholder="Email" id="email" style="margin-top: 20%;">
+				<div class="inputsignin">
+				<input type="email" name="" placeholder="&#160&#160 Họ và tên" id="name" class="input">
+				<i class="fas fa-user"></i>
+				</div>
+				<div class="inputsignin">
+				<input type="email" name="" placeholder="&#160&#160 Email" id="email" class="input">
+				<i class="fas fa-envelope"></i>
+				</div>
+				<div class="inputsignin">
+				<input type="password" name="" placeholder="&#160&#160 Mật khẩu" id="passwordsignin" class="input">
+				<i class="fas fa-lock"></i>
+				</div>
+				<div class="inputsignin">
+				<input type="password" name="" placeholder="&#160&#160 Xác nhận mật khẩu" id="passwordsignin" class="input">
+				<i class="fas fa-unlock-alt"></i>
+				</div>
+				<div class="inputsignin" style="display: flex; justify-content: space-around;">
+					<select>
+						<option selected>Nam</option>
+						<option>Nữ</option>
+					</select>
+					<select>
+						<option>Trẻ em</option>
+						<option>Phụ huynh</option>
+						<option>Giáo viên</option>
+					</select>
+				</div>
+				<div class="inputsignin">
+						<input type="button" name="" value="Đăng ký" id="btnsignup">
+				</div>
+				<div class="inputsignin" style="margin-top: 4%;">
+					<p id="returnsignin">Bạn đã có tài khoản ? Quay lại <span onclick="show();">&#160 Đăng nhập</span></p>
+				</div>
 			</form>
 			
 		</div>
