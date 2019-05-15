@@ -272,10 +272,10 @@ body {
 	height: auto;
 	/*background-color: blue;*/
 	transform: scale(0.6);
-	transition: ease-in-out all 0.7s;
+	transition: ease-in-out all 0.4s;
 }
 .slideitem:hover {	
-	transform: scale(0.8);
+	transform: scale(0.7);
 	background-color: white;
 	cursor: pointer;
 	/*-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
@@ -767,6 +767,8 @@ body {
 	border: 3px solid #3399FF;
 	transition: all 0.4s;
 	text-align: justify;
+	border-radius: 20px;
+	border-top-left-radius: 0;
 }
 #contentguide input {
 	width: 50px;
@@ -1072,7 +1074,7 @@ body {
 	transition: all 0.4s;
 }
 .team1 ul li a:hover {
-	color: #99FFFF;
+	transform: scale(1.1);
 }
 #emailicon {
 	position: absolute;
@@ -1112,6 +1114,9 @@ body {
 	display: inline-block;
 	width: 33%;
 	text-align: center;
+}
+.div-100 p i {
+	color: #0066FF;
 }
 @keyframes textaff{
 	from {width: 0;}

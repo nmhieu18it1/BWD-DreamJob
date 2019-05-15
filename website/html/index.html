@@ -91,17 +91,17 @@
 
 			<div class="slideitem">
 				<img src="../img/slide/index-01-01.png">
-				<h1><a href="">Mục Đích&#160&#160&#160<i class="far fa-clone"></i></a></h1>
+				<h1><a href="" id="mucdich02">Mục Đích&#160&#160&#160<i class="far fa-clone"></i></a></h1>
 				<h2>" Giải trí, nhận thưởng và phát triển tài năng của riêng bạn... "</h2>
 			</div>
 			<div class="slideitem">
 				<img src="../img/slide/index-02-01.png">
-				<h1><a href="">Hướng Dẫn&#160&#160&#160<i class="far fa-clone"></i></a></h1>
+				<h1><a href="" id="huongdan02">Hướng Dẫn&#160&#160&#160<i class="far fa-clone"></i></a></h1>
 				<h2>" Cùng xem qua cách sử dụng website của chúng tôi nhé ... "</h2>
 			</div>
 			<div class="slideitem">
 				<img src="../img/slide/index-03-01.png">
-				<h1><a href="">Quà Tặng&#160&#160&#160<i class="far fa-clone"></i></a></h1>
+				<h1><a href="" id="quatang02">Quà Tặng&#160&#160&#160<i class="far fa-clone"></i></a></h1>
 				<h2>" Tham gia cùng chúng tôi để có cơ hội nhận những phần quà hấp dẫn ... "</h2>
 			</div>
 	   
@@ -658,7 +658,7 @@
 		<div class="div-100"  style="background-color: white;">
 			<p><i class="fas fa-map-marker-alt"></i>&#160&#160Địa chỉ: Ngũ Hành Sơn, Đà Nẵng, Việt Nam</p>
 			<p><i class="fas fa-phone"></i>&#160&#160Điện thoại: 033 238 6276</p>
-			<p><i class="far fa-envelope"></i>&#160&#160Email: dreamjob.contact@gmail.com</p>
+			<p><i class="fas fa-envelope"></i></i>&#160&#160Email: dreamjob.contact@gmail.com</p>
 		</div>
 	</div>
 
@@ -702,6 +702,48 @@ $("#lienhe01").click(function(e) {
     e.preventDefault();
     // Call the scroll function
     goToByScroll("contact");
+});
+$("#mucdich01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    mucdich();
+    goToByScroll("guide");
+});
+$("#mucdich02").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    mucdich();
+    goToByScroll("guide");
+});
+$("#huongdan01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    huongdan();
+    goToByScroll("guide");
+});
+$("#huongdan02").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    huongdan();
+    goToByScroll("guide");
+});
+$("#quatang01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    quatang();
+    goToByScroll("guide");
+});
+$("#quatang02").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    quatang();
+    goToByScroll("guide");
 });
 $("#totop").click(function(e) {
     // Prevent a page reload when a link is pressed
