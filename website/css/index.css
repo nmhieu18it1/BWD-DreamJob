@@ -191,6 +191,7 @@ body {
 	margin-top: 3%;
 	/*background-color: green;*/
 	position: relative;
+	transition: all 0.3s;
 }
 #hblestgo a {
 	border-radius: 20px;
@@ -200,17 +201,14 @@ body {
 	color: white;
 	font-weight: bold;
 	font-size: 25px;
-	transition: all 0.8s;
+	transition: all 0.3s;
 	text-decoration: none;
 }
+#hblestgo:hover {
+	transform: scale(1.05);
+}
 #hblestgo a:hover {
-	/*-webkit-box-shadow: 0px 0px 50px 10px rgba(204,255,0,0.5);
-	-moz-box-shadow: 0px 0px 50px 10px rgba(204,255,0,0.5);
-	box-shadow: 0px 0px 50px 10px rgba(204,255,0,0.5);*/
-	background-color: #695ce6;
-	transform: scale(1.2);
-	border-radius: 15px;
-	padding: 7% 18%;
+	background-color: #9933ff;
 }
 #slide {
 	width: 80%;
@@ -587,10 +585,54 @@ body {
 	color: #2470ff;
 	font-family(stack): Arial, Helvetica, sans-serif;
 }
+#guide {
+	width: 100%;
+	height: 300px;
+	background-color: red;
+	position: relative;
+	margin-top: 4%;
+	border-radius: 20px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#menuguide {
+	width: 85%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	background-color: red;
+	position: relative;
+	margin: auto;
+}
+.menuguide-select {
+	width: 30%;
+	height: 100%;
+	margin-top: 1%;
+	background-color: blue;
+}
+.menuguide-select > a {
+	display: inline-block;
+	padding: 1% 5%;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #0099FF;
+	border-radius: 30px;
+}
+.menuguide-select > h1 {
+	display: inline-block;
+	font-size: 15px;
+}
+.menuguide-select > h1 a {
+
+}
 #contact {
 	width: 100%;
 	height: 650px;
-	margin-top: 3%;
+	margin-top: 4%;
 	position: relative;
 	border-radius: 20px;
 	/*background-color: red;*/
