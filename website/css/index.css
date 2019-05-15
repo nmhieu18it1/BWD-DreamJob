@@ -622,12 +622,20 @@ body {
 	background-color: #0099FF;
 	border-radius: 30px;
 }
+.menuguide-select > a:hover {
+	color: white;
+	text-decoration: none;
+}
 .menuguide-select > h1 {
 	display: inline-block;
-	font-size: 15px;
+	font-size: 25px;
+	margin-left: 20px;
+	font-family(stack): Arial, Helvetica, sans-serif;
 }
 .menuguide-select > h1 a {
-
+	color: #9999FF;
+	font-family(stack): Arial, Helvetica, sans-serif;
+	text-decoration: none;
 }
 #contact {
 	width: 100%;
