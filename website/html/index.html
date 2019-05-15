@@ -4,7 +4,10 @@
 
 	<title>Trang Chủ - Ước Mơ</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediaindex.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
 
 </head>
-<body style="background-color: white;" onload="khung();">
+<body style="background-color: white;">
 
 	<div id="backtop">
 		<i class="fas fa-paper-plane" onmouseover="summory();" id="totop" onmouseout="hidesummory();"></i>
@@ -35,7 +38,6 @@
 				<div id="logo">
 					<a href="">
 						<h1>DreamJob</h1>
-						
 					</a>
 					<h2>&#160&#160Ước mơ của bé.</h2>
 				</div>
@@ -43,11 +45,23 @@
 				<div id="menu">
 					
 					<ul style="display: flex; justify-content: space-around;">
+						<!-- <li><input type="button" name="" value="Click" onclick="showmenures();"></li> -->
 						<li><a href="" id="hotro" style="font-weight: bold; color: #8a31e2;">Hỗ Trợ</a></li>
 						<li><a href="" id="lienhe">Liên Hệ</a></li>
 						<li><a href="signin.html" target="_blank">Đăng Nhập</a></li>
 					</ul>
 
+				</div>
+				<div id="iconmenu">
+						<i class="fas fa-bars" onclick="showmenures();"></i>
+				</div>
+				<div id="menures" onblur="hidemenures();">
+					<a href="" id="hotro01" onclick="hidemenures();">Hỗ Trợ</a>
+					<a href="" id="lienhe01" onclick="hidemenures();">Liên Hệ</a>
+					<a href="" id="mucdich01" onclick="hidemenures();">Mục Đích</a>
+					<a href="" id="huongdan01" onclick="hidemenures();">Hướng Dẫn</a>
+					<a href="" id="quatang01" onclick="hidemenures();">Quà Tặng</a>
+					<a href="signin.html" target="_blank" onclick="hidemenures();">Đăng Nhập</a>
 				</div>
 
 			</div><!--#menubar-->
@@ -56,11 +70,11 @@
 
 				<div id="hbtitle">
 					<h1>Ước Mơ Của Bạn Là Gì ?</h1><br>
-					<h1 style="font-size: 24px;"><!-- &#160&#160&#160 -->Cùng tham gia những trò chơi thú vị thôi nào.</h1>
+					<h1 style="font-size: 24px;">Cùng tham gia những trò chơi thú vị thôi nào.</h1>
 				</div>
 
 				<div id="hbcontent">
-					<p><!-- &#160&#160&#160 -->Hàng ngàn trò chơi thú vị cùng những phần quá vô cùng hấp dẫn đang chờ các bạn. <br>Nào mình cùng đi.</p>
+					<p>&#160&#160&#160 Hàng ngàn trò chơi thú vị cùng những phần quá vô cùng hấp dẫn đang chờ các bạn. <br>Nào mình cùng đi.</p>
 				</div>
 
 				<div id="hblestgo">
@@ -348,8 +362,8 @@
 			</div>
 			<div id="contentguide">
 				<div id="navguide">
-					<h1 id='canhan'>Cá nhân</h1>
-					<h1 id='xahoi'>Xã hội</h1>
+					<h1 id='canhan' onclick="intext(this);">Cá nhân</h1>
+					<h1 id='xahoi' onclick="intext(this);">Xã hội</h1>
 				</div>
 				<div id="content">
 						<h1>Mục Đích của Website</h1>
@@ -486,6 +500,18 @@ $("#hotro").click(function(e) {
     goToByScroll("slide");
 });
 $("#lienhe").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("contact");
+});
+$("#hotro01").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("guide");
+});
+$("#lienhe01").click(function(e) {
     // Prevent a page reload when a link is pressed
     e.preventDefault();
     // Call the scroll function

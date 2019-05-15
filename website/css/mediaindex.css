@@ -1,0 +1,37 @@
+@media screen and (max-width: 800px) {
+	#menubar #logo h2 {
+		display: none;
+	}
+	#menubar #logo h1 {
+		transform: scale(0.5);
+		margin: 0;
+	}
+	#menubar #logo {
+		width: 100px;
+	}
+	#headstart {
+		height: 450px;
+	}
+	#headbody #hbtitle {
+		display: none;
+	}
+	#headbody #hbcontent p {
+		font-size: 15px;
+	}
+	#headbody #hblestgo {
+		transform: scale(0.8);
+		margin-top: 100px;
+		margin-left: 10px;
+		/*margin-right: 50px;*/
+		/*background-color: red;*/
+	}
+	#menubar #menu {
+		display: none;
+	}
+	#iconmenu {
+		display: block;
+	}
+	#slide {
+		display: none;
+	}
+}
