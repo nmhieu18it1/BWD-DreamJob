@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 	#menubar #logo h2 {
 		display: none;
 	}
@@ -118,6 +118,42 @@
 	}
 	.div-100 p {
 		width: 33%;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 500px) {
+	#headstart {
+		height: 320px;
+		width: 100%;
+	}
+	#headbody #hbcontent p {
+		font-size: 11px;
+	}
+	#headbody #hblestgo {
+		transform: scale(0.5);
+		margin-top: 50px;
+		margin-left: -50px;
+	}
+	#backtop {
+		top: 0;
+		left: 0;
+	}
+	#headgame {
+		width: 100%;
+	}
+	#icongame {
+		transform: scale(0.5);
+		left: -20px;
+		bottom: 0px;
+	}
+	#textgame {
+		top: 30px;
+		right: 5px;
+	}
+	#textgame h1 {
+		font-size: 30px;
+	}
+	#textgame h2 {
 		font-size: 12px;
 	}
 }
