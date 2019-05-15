@@ -7,3 +7,8 @@ function summory() {
 	}, 1000);
 
 };
+function hidesummory() {
+	// body...
+	var obj = document.querySelector('#backtop p');
+	obj.style.opacity = '0';
+};
