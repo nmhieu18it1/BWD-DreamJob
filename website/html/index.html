@@ -20,6 +20,11 @@
 </head>
 <body style="background-color: #b5b1ff4d;">
 
+	<div id="backtop">
+		<i class="fas fa-paper-plane" onmouseover="summory();" id="totop"></i>
+		<p>Về đầu trang</p>
+	</div>
+
 	<!--.contain-80-->
 	<div class="contain-80">
 		
@@ -424,6 +429,12 @@ $("#lienhe").click(function(e) {
     // Call the scroll function
     goToByScroll("contact");
 });
+$("#totop").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll("headstart");
+});
 </script>
 <script type="text/javascript">
 		function dialoggift() {
@@ -452,5 +463,6 @@ $("#lienhe").click(function(e) {
     }
 })
 </script>
+<script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>
