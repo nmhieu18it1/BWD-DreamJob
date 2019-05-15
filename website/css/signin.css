@@ -23,6 +23,15 @@ body {
 	position: relative;	
 
 }
+#fortext {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	background-color: green;
+	top: 0;
+	left: 70px;
+	bottom: 0;
+}
 #formsignin {
 	position: absolute;
 	right: -60px;
