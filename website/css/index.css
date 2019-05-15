@@ -368,9 +368,9 @@ body {
 	margin-left: 15%;
 }
 #game {
-	width: 100%;
+	width: 90%;
 	height: 760px;
-	margin-top: 0%;
+	margin: auto;
 	position: relative;
 	background-color: white;
 	border-radius: 20px;
