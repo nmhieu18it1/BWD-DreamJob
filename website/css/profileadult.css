@@ -272,6 +272,76 @@ td a:hover {
 	width: 200px;
 	height: 200px;
 }
+#iconmenuprofile {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	display: none;
+}
+#menuprofile {
+	width: 110px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: -115px;
+	transition: all 0.4s;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+}
+#menuprofile a {
+	font-size: 13px;
+	display: block;
+	width: 80%;
+	margin: auto;
+	padding: 5px 0px;
+	text-align: left;
+	color: #0066FF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#menuprofile h1 {
+	font-size: 13px;
+	display: block;
+	width: 80%;
+	margin: auto;
+	padding: 5px 0px;
+	text-align: left;
+	color: #0066FF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#menuprofile a:hover {
+	color: #0099FF;
+}
+#listkidres {
+	width: 100px;
+	height: auto;
+	position: absolute;
+	top: 140px;
+	left: 5px;
+	background-color: white;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	z-index: -99;
+	transition: all 0.4s;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(138,133,138,0.75);
+}
+#listkidres a{
+	font-size: 15px;
+	display: block;
+	width: 60%;
+	margin: auto;
+	text-align: left;
+}
 #icon {
 	width: 8%;
 	height: 15%;
@@ -527,6 +597,8 @@ td a:hover {
 .div-100 {
 	width: 100%;
 	display: block;
+	display: flex;
+	justify-content: space-around;
 }
 .div-100 p {
 	/*text-align: center;*/
@@ -634,6 +706,8 @@ td a:hover {
 	margin: auto;
 	/*background-color: red;*/
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
 #contactdeco li {
 	display: inline-block;
@@ -670,6 +744,13 @@ td a:hover {
 	margin-top: 3%;
 }
 .col-24 {
+	width: 24%;
+	height: 100%;
+	float: left;
+	position: relative;
+	/*background-color: blue;*/
+}
+.col-24-01 {
 	width: 24%;
 	height: 100%;
 	float: left;
@@ -1275,7 +1356,7 @@ td a:hover {
 	margin-bottom: 5%;
 	color: white;
 	/*background-color: blue;*/
-	text-align: center;
+	text-align: justify;
 }
 #history {
 	width: 100%;
@@ -1283,6 +1364,7 @@ td a:hover {
 	margin-top: 5%;
 	background-color: #666666;
 	position: relative;
+	border: 2px solid #444444;
 	overflow: auto;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);

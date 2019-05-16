@@ -6,6 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/profileadult.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediaprofileadult.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -40,6 +43,19 @@
 		</div>
 
 		<div id="profileright">
+			<i class="fas fa-bars" id="iconmenuprofile" onmouseover="showmenuprofile()" onmouseout="hidemenuprofile()"></i>
+			<div id="menuprofile" onmouseover="showmenuprofile()" onmouseout="hidemenuprofile()">
+				<a href=""><i class="fab fa-facebook-square"></i>&#160&#160 Facebook</a>
+				<a href=""><i class="fab fa-twitter-square"></i>&#160&#160 Twitter</a>
+				<a href=""><i class="fab fa-instagram"></i>&#160&#160 Instagram</a>
+				<h1 onmouseover="showlistkidres();" onmouseout="hidelistkidres();"><i class="fas fa-baby" ></i>&#160&#160 Trẻ em &#160&#160&#160&#160<i class="fas fa-caret-right"></i></h1>
+				<div id="listkidres" onmouseover="showlistkidres();" onmouseout="hidelistkidres();">
+					<a href=""><i class="fas fa-chess-king"></i>&#160&#160John</a>
+					<a href=""><i class="fas fa-chess-queen"></i>&#160&#160Mary</a>
+					<a href=""><i class="fas fa-chess-king"></i>&#160&#160Jack</a>
+					<a href=""><i class="fas fa-chess-queen"></i>&#160&#160Star</a>
+				</div>
+			</div>
 			<h1>Thông tin cá nhân</h1>
 				<table>
 					<tr>
@@ -67,6 +83,7 @@
 					</tr>
 				</table>
 		</div>
+
 
 		<div id="icon">
 			<i class="fas fa-plus-circle" style="margin-left: 10px;"></i>
@@ -121,7 +138,7 @@
 			</div>
 		</div>
 
-		<div class="col-24">
+		<div class="col-24-01">
 			<div id="infokid">
 				<div id="infokid-01">
 					<img src="../img/team/3.jpg">
@@ -129,7 +146,7 @@
 					<h2>" Violet "</h2>
 				</div>
 				<div id="infokid-02">
-					<table>
+					<table id="infotable">
 						<tr>
 							<td>Sinh nhật:</td>
 							<td>10/12/2006</td>
@@ -144,9 +161,9 @@
 						</tr>
 					</table>
 					<table style="height: auto;">
-						<tr style="font-size: 15px;">
+						<tr>
 							<td>Thời gian hoạt động hôm nay:</td>
-							<td>3 giờ</td>
+							<td>3h</td>
 						</tr>
 					</table>
 				</div>
@@ -311,7 +328,7 @@
 			<div id="history">
 				<h1>Hoạt động của bé</h1>
 				<div class="contenthistory">
-					<h1>&#160&#160 Hôm nay (ngày 13/05/2019)</h1>
+					<h1>&#160&#160 Ngày 13/05/2019</h1>
 					<div class="detailhistory">
 						<h2>&#160&#160 Đăng nhập <span>13:16</span></h2>
 						<h2>&#160&#160 Chơi game <a href="">Pokemon </a><span>13:16</span></h2>

@@ -144,3 +144,29 @@ function vietthu() {
 	ngay.innerHTML = '10/06/2019';
 	noidung.innerHTML = 'Viết thư cho bố mẹ.';
 }
+function showlistkidres() {
+	// body...
+		var obj = document.getElementById('listkidres');
+		obj.style.opacity = '1';
+		obj.style.zIndex = '99';
+
+}
+function hidelistkidres() {
+	// body...
+		var obj = document.getElementById('listkidres');
+		obj.style.opacity = '0';
+		obj.style.zIndex = '-99';
+}
+function showmenuprofile() {
+	// body...
+	var obj = document.getElementById('menuprofile');
+		obj.style.opacity = '1';
+		obj.style.zIndex = '99';
+}
+function hidemenuprofile() {
+	// body...
+	var obj = document.getElementById('menuprofile');
+		obj.style.opacity = '0';
+		obj.style.zIndex = '-99';
+}
+
