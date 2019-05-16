@@ -84,6 +84,25 @@ body {
 	color: white;
 	text-align: center;
 }
+#contenttext > p {
+	width: 75%;
+	height: auto;
+	margin: auto;
+	font-size: 17px;
+	margin-top: 70px;
+	/*background-color: red;*/
+	color: white;
+	text-align: justify;
+}
+#tacgia {
+	display: block;
+	width: 80%;
+	margin: auto;
+	text-align: right;
+	margin-top: 25px;
+	color: white;
+	font-size: 17px;
+}
 #formsignin {
 	position: absolute;
 	right: -60px;
