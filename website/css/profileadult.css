@@ -984,8 +984,9 @@ td a:hover {
 }
 #document {
 	width: 100%;
-	height: auto;
-	margin-top: 2%;
+	height: 430px;
+	margin-top: 20px;
+	overflow: auto;
 	position: relative;
 	background-color: white;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
@@ -1017,12 +1018,27 @@ td a:hover {
 	transform: scale(1.4);
 }
 #document h1 {
-	font-size: 15px;
+	font-size: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 	/*font-weight: bold;*/
 	text-align: center;
+	color: #0066CC;
+	margin: 20px 0px;
+}
+#inteltitle {
+	font-weight: bold;
+}
+#documentcontent {
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 40px;
+}
+#documentcontent > h2 {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-weight: bold;*/
 	color: #0099FF;
-	margin: 1% 0%;
 }
 #clock {
 	width: 45%;
