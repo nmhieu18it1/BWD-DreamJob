@@ -11,6 +11,7 @@ function show() {
 	formsu.style.opacity = '0';
 	formsu.style.right = '100px';
 	formsu.style.zIndex = '0';
+	content.style.marginTop = '70px';
 	title.innerHTML = 'Chào mừng bạn đến với <span>DreamJob</span>';
 	content.innerHTML = '<q>&#160 Những ước mơ không chết chừng nào bạn còn nuôi dưỡng nó bằng niềm đam mê.&#160</q><span id="tacgia">- Nick Vujicic -</span>';
 }
