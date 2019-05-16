@@ -807,6 +807,7 @@ td a:hover {
 	text-align: center;
 	margin-top: 5%;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 .smart h1:hover {
 	transform: scale(1.1);
@@ -1040,6 +1041,16 @@ td a:hover {
 	/*font-weight: bold;*/
 	color: #0099FF;
 }
+#documentcontent > span {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px  0px;
+}
+#tracnghiem {
+	font-size: 18px;
+	text-decoration: none;
+}
 #clock {
 	width: 45%;
 	height: 20%;
@@ -1048,7 +1059,6 @@ td a:hover {
 	float: left;
 	display: inline-block;
 	position: relative;
-	transform: rotate(-1deg);
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
@@ -1063,7 +1073,6 @@ td a:hover {
 	float: left;
 	position: relative;
 	display: inline-block;
-	transform: rotate(3deg);
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
@@ -1172,11 +1181,14 @@ td a:hover {
 	height: 60%;
 	margin: auto;
 	margin-top: 5%;
+	overflow: auto;
 	/*background-color: blue;*/
 }
 #contentevent h1 {
 	width: 90%;
 	height: auto;
+	color: white;
+	cursor: pointer;
 	margin-left: 5%;
 	text-align: center;
 	display: inline-block;
