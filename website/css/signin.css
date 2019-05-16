@@ -83,16 +83,26 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	text-align: center;
+	transition: all 0.4s;
+}
+#contenttext > h1 span {
+	font-size: 23px;
+	font-weight: bold;
 }
 #contenttext > p {
 	width: 75%;
 	height: auto;
 	margin: auto;
-	font-size: 17px;
+	font-size: 15px;
 	margin-top: 70px;
 	/*background-color: red;*/
 	color: white;
 	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#contenttext > p span {
+	font-size: 16px;
+	font-weight: bold;
 }
 #tacgia {
 	display: block;
