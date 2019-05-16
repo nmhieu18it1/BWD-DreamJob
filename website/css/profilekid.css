@@ -202,6 +202,7 @@ td a:hover {
 	width: 90%;
 	height: 700px;
 	margin: auto;
+	overflow: auto;
 	/*background-color: #EEEEEE;*/
 	/*border: 5px solid #CC99FF;*/
 	border-radius: 10px;
@@ -343,64 +344,6 @@ td a:hover {
 	color: white;
 	margin-left: 10%;
 	margin-top: 5%;
-}
-#pages {
-	width: 60%;
-	height: 10%;
-	/*position: absolute;
-	bottom: 2%;
-	left: 15%;*/
-	margin: auto;
-	margin-bottom: 5%;
-	/*border: 2px solid #CC99FF;*/
-	background-color: white;
-	border-radius: 10px;
-}
-#pages ul {
-	width: 80%;
-	margin: auto;
-	align-items: center;
-}
-#pages ul li {
-	display: inline-block;
-	list-style: none;
-	padding: 0.5% 3%;
-	margin-left: 2%;
-	background-color: #66CCFF;
-	border-radius: 30px;
-	cursor: pointer;
-}
-#pages ul li a {
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-	font-weight: bold;
-}
-#right {
-	width: 20%;
-	float: left;
-	margin: 0% 0%;
-	position: relative;
-	/*background-color: green;*/
-	height: 200px;
-}
-#right ul {
-	margin: 0;
-}
-#right ul li {
-	display: block;
-	list-style: none;
-	width: 100%;
-	height: 25%;
-	/*padding: 5% 30%;*/
-	text-align: center;
-	padding: 5% 0%;
-	opacity: 0.7;
-	-moz-opacity: 0.7;
-	-webkit-opacity: 0.7;
-	cursor: pointer;
-	transition: ease-in-out all 0.4s;
-	position: relative;
 }
 #left {
 	width: 25%;
@@ -546,19 +489,6 @@ td a:hover {
 li > a {
 	font-weight: bold;
 }*/
-#right ul li:hover {
-	opacity: 1;
-	-moz-opacity: 1;
-	-webkit-opacity: 1;
-	transform: scale(1.1);
-	border-radius: 10px;
-	font-weight: bold;
-}
-#right ul li a {
-	text-decoration: none;
-	font-size: 16px;
-	color: white;
-}
 #footer {
 	width: 100%;
 	height: 300px;
@@ -734,7 +664,8 @@ li > a {
 }
 .div-100 {
 	width: 100%;
-	display: block;
+	display: flex;
+	justify-content: space-around;
 }
 .div-100 p {
 	/*text-align: center;*/
@@ -868,4 +799,16 @@ li > a {
 	height: 20%;
 	margin-top: 5%;
 	/*background-color: green;*/
+}
+#quanhieunhat {
+	text-align: center; 
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #4929f1;
+}
+#qua {
+	text-align: center; 
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #4929f1;
 }

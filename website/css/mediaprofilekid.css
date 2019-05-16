@@ -1,0 +1,108 @@
+@media screen and (max-width: 1024px) {
+	#profilehead {
+		width: 80%;
+		left: 10%;
+		right: 10%;
+	}
+	.div-100 {
+		display: block;
+	}
+	.div-100 p {
+		width: 100%;
+		font-size: 20px;
+	}
+	#left {
+		width: 38%;
+		margin: 10px 5px;
+	}
+	#center {
+		width: 58%;
+		margin: 10px 5px;
+	}
+	#menu label {
+		width: 35%;
+		font-size: 12px;
+		margin: 20px 10px;
+	}
+	#point {
+		width: 50%;
+		font-size: 12px;
+	}
+	#menubar1 ul li a {
+		font-size: 12px;
+	}
+	.contentitem {
+		width: 30%;
+		margin: 10px 2px;
+	}
+	.contentitem h1 {
+		font-size: 12px;
+		margin: 0px 5px;
+	}
+	.contentitem a {
+		margin-top: 7px;
+	}
+	.div-50 {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#head {
+		height: 250px;
+	}
+	#profilehead {
+		width: 80%;
+		left: 10%;
+		right: 10%;
+		height: 200px;
+	}
+	#icon {
+		display: none;
+	}
+	.label {
+		display: none;
+	}
+	#profileleft a h1 {
+		font-size: 15px;
+	}
+	#profileleft h2 {
+		font-size: 10px;
+	}
+	#profileright h1 {
+		font-size: 13px;
+	}
+	#profileright table {
+		font-size: 12px;
+	}
+	#left {
+		width: 100%;
+		margin: 0;
+	}
+	#center {
+		width: 100%;
+		margin: 20px 0px;
+	}
+	.contentitem {
+		width: 45%;
+		margin: 10px 5px;
+	}
+	.contentitem h1 {
+		font-size: 15px;
+		margin: 0px 5px;
+	}
+	.contentitem a {
+		margin-top: 7px;
+	}
+	.div-100 p {
+		width: 100%;
+		font-size: 15px;
+	}
+	#quanhieunhat {
+		font-size: 13px;
+		font-weight: bold;
+	}
+	#qua {
+		font-size: 13px;
+		font-weight: bold;
+	}
+}
