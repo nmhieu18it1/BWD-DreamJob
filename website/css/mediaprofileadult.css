@@ -180,3 +180,88 @@
 		margin-bottom: 5px;
 	}
 }
+@media screen and (max-width: 600px) {
+	#profilehead {
+		width: 90%;
+		height: 200px;
+		margin: auto;
+		left: 7%;
+		right: 5%;
+	}
+	#profileleft a h1 {
+		font-size: 13px;
+	}
+	#profileleft h2 {
+		font-size: 10px;
+	}
+	#divmenu a {
+		font-size: 18px;
+	}
+	#profileright h1 {
+		font-size: 12px;
+	}
+	#profileright table {
+		font-size: 12px;
+	}
+	#iconmenuprofile {
+		font-size: 15px;
+	}
+	#menuprofile {
+		top: 5px;
+		right: 40px;
+	}
+	#head {
+		height: 250px;
+	}
+	#infokid {
+		width: 100%;
+		display: block;
+	}
+	#game {
+		display: none;
+	}
+	#infokid-01 img {
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	#infokid-01 a h1 {
+		font-size: 15px;
+		margin-left: 15px;
+		margin-top: 30px;
+	}
+	.col-50 {
+		width: 100%;
+	}
+	.col-24 {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.smart {
+		height: 45px;
+	}
+	#footer {
+		display: none;
+	}
+	.div-50 {
+		margin-top: 15px;
+	}
+	.div-50 p {
+		font-size: 13px;
+	}
+	.div-100 {
+		display: block;
+	}
+	.div-100 p {
+		width: 100%;
+		font-size: 12px;
+	}
+	#document h1 {
+		font-size: 20px;
+	}
+	#documentcontent > h2 {
+		font-size: 17px;
+	}
+	#time {
+		font-size: 18px;
+	}
+}

@@ -147,15 +147,13 @@ function vietthu() {
 function showlistkidres() {
 	// body...
 		var obj = document.getElementById('listkidres');
-		obj.style.opacity = '1';
-		obj.style.zIndex = '99';
+		obj.style.display = 'block';
 
 }
 function hidelistkidres() {
 	// body...
 		var obj = document.getElementById('listkidres');
-		obj.style.opacity = '0';
-		obj.style.zIndex = '-99';
+		obj.style.display = 'none';
 }
 function showmenuprofile() {
 	// body...
