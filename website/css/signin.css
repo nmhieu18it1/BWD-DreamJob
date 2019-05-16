@@ -1,8 +1,13 @@
+body {
+	background-image: url(../img/1.jpg);
+	background-size: 100% 150%;
+	background-repeat: no-repeat;
+}
 #contain-signin {
-	width: 80%;
+	width: 60%;
 	height: 450px;
 	margin: auto;
-	background-color: rgba(68,68,68,0.8);
+	background-color: rgba(68,68,68,0.5);
 	margin-top: 100px;
 	position: relative;
 }
@@ -15,20 +20,76 @@
 	position: relative;	
 }
 #fortext {
-	width: 50%;
+	width: 57%;
 	height: 100%;
 	position: absolute;
-	background-color: green;
+	/*background-color: green;*/
 	top: 0;
-	left: 70px;
+	left: -30px;
 	bottom: 0;
+}
+#headtext {
+	width: 80%;
+	height: 50px;
+	margin: auto;
+	margin-top: 30px;
+	/*background-color: red;*/
+}
+#headtext > h1 {
+	font-size: 20px;
+	margin: 0;
+	margin-top: 10px;
+	font-weight: bold;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+#headtext > h1 a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+	background-color: #9966FF;
+	border-radius: 20px;
+}
+#giacmo {
+	font-size: 20px;
+	font-weight: bold;
+}
+#headtext > h2 {
+	display: inline-block;
+	font-size: 15px;
+	margin: 0;
+	font-weight: normal;
+	margin-left: 30px;
+	margin-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	padding: 5px 0px;
+}
+#contenttext {
+	width: 80%;
+	height: 300px;
+	/*background-color: red;*/
+	margin: auto;
+	margin-top: 25px;
+}
+#contenttext > h1 {
+	width: 100%;
+	font-size: 20px;
+	margin: 0;
+	margin-top: 10px;
+	font-weight: bold;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
 }
 #formsignin {
 	position: absolute;
 	right: -60px;
 	top: 0;
 	bottom: 0;
-	width: 40%;
+	width: 50%;
 	background-color: white;
 	transform: scale(1.1);
 	transition: all 0.5s;
@@ -55,7 +116,7 @@
 }
 .inputsignin {
 	display: block;
-	width: 50%;
+	width: 60%;
 	height: 30px;
 	margin: auto;
 	margin-top: 8%;
@@ -130,7 +191,7 @@
 	right: 100px;
 	top: 0;
 	bottom: 0;
-	width: 40%;
+	width: 50%;
 	background-color: white;
 	transform: scale(1.1);
 	transition: all 0.5s;
@@ -157,7 +218,7 @@
 }
 #formsignup .inputsignin {
 	display: block;
-	width: 50%;
+	width: 60%;
 	height: 25px;
 	margin: auto;
 	margin-top: 6%;
@@ -200,7 +261,7 @@
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-size: 13px;
+	font-size: 12px;
 	color: #666666;
 	display: inline-block;
 	padding: 0;
