@@ -1,10 +1,8 @@
 body {
-	background-image: url(../img/8.png);
+	background-image: url(../img/8-1.png);
 	background-size: 100% 150%;
 	background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-=======
 body:after{
 	content: '';
 	background-image: linear-gradient(#d3dcff,#9a8eff);
@@ -13,9 +11,10 @@ body:after{
 	left: 0%;
 	width: 100%;
 	height: 100%;
-	opacity: 0.9;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
 }
->>>>>>> d8dd58e901d3a35f92e62ca70996bbb857602a1f
 #contain-signin {
 	width: 60%;
 	height: 450px;
@@ -44,6 +43,8 @@ body:after{
 	width: 100%;
 	height: 100%;
 	opacity: 0.6;
+	-moz-opacity: 0.6;
+	-webkit-opacity: 0.6;
 }
 #fortext {
 	width: 57%;
