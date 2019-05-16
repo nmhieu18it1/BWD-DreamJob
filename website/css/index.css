@@ -411,7 +411,10 @@ body {
 	height: 100%;
 	/*background-color: red;*/
 	margin-top: 2%;
-	margin-left: 5px;
+	margin-left: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-right: none;
 	overflow: auto;
 }
 .gameitem {
@@ -518,16 +521,18 @@ body {
 }
 #gametop {
 	width: 35%;
-	height: auto;
+	height: 100%;
 	/*background-color: blue;*/
 	float: left;
+	overflow: auto;
 	transform: scale(0.8);
 	transition: all 0.4s;
 	background-color: white;
+	border: 13px double #CC66FF;
 	position: relative;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	/*-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
-	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);*/
 }
 #gametoptitle {
 	width: 100%;
@@ -546,7 +551,7 @@ body {
 	position: absolute;
 }
 #gametoptitle h1 {
-	color: #4c12f5;
+	color: #9966FF;
 	font-family(stack): Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	/*font-weight: bold;*/
