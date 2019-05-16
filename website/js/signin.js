@@ -27,3 +27,13 @@ function hide() {
 	title.innerHTML = 'Một số lưu ý khi <span>Đăng Ký</span>';
 	content.innerHTML = '<span>HỌC SINH:</span> Có thể chơi game - tích điểm - đổi quà.<br><br><span>PHỤ HUYNH:</span> Có thể theo dõi trẻ em được liên kết về xu hướng - hoạt động.<br><br><span>GIÁO VIÊN:</span> Có thể tạo ra trò chơi để kiểm tra xu hướng phát triển cho học sinh.';
 }
+function signin() {
+	// body...
+	alert('Đăng nhập thành công !');
+	window.location="../html/index.html";
+}
+function signup() {
+	var name = document.querySelector('.inputsignin #name').value;
+	alert('Đăng ký thành công ! Xin chào ' + name + ' !');
+	show();
+}

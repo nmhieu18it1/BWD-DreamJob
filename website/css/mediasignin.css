@@ -1,0 +1,130 @@
+@media screen and (max-width: 1025px) {
+	body {
+		background-image: url(../img/1-1.jpg);
+		background-size: 100% 100%;
+		background-repeat: repeat;
+	}
+	#contain-signin {
+		width: 80%;
+		background-color: unset;
+	}
+	#signin {
+		background-image: unset;
+		box-shadow: unset;
+		-moz-box-shadow: unset;
+		-webkit-box-shadow: unset;
+	}
+	#signin:after {
+		opacity: 0;
+		-moz-opacity: 0;
+		-webkit-opacity: 0;
+	}
+	#formsignin {
+		width: 80%;
+		right: 10%;
+		left: 10%;
+		bottom: -250px;
+		top: 100px;
+	}
+	#formsignin h1 {
+		margin-top: 50px;
+	}
+	#formsignup h1 {
+		margin-top: 40px;
+	}
+	#fortext {
+		display: none;
+	}
+	#formsignup {
+		width: 80%;
+		right: 10%;
+		left: 10%;
+		top: 100px;
+		bottom: -250px;
+	}
+}
+@media screen and (max-width: 600px) {
+	#contain-signin {
+		width: 90%;
+		background-color: unset;
+		margin-top: 50px;
+	}
+	#signin {
+		background-image: unset;
+		box-shadow: unset;
+		-moz-box-shadow: unset;
+		-webkit-box-shadow: unset;
+		/*background-color: red;*/
+	}
+	#signin:after {
+		opacity: 0;
+		-moz-opacity: 0;
+		-webkit-opacity: 0;
+	}
+	#formsignin {
+		width: 90%;
+		right: 5%;
+		left: 5%;
+		bottom: 20px;
+		top: 20px;
+	}
+	#formsignin h1 {
+		font-size: 20px;
+		margin-top: 50px;
+	}
+	.inputsignin {
+		width: 70%;
+		margin-top: 35px;
+	}
+	.inputsignin input {
+		font-size: 10px;
+	}
+	#formsignup h1 {
+		margin-top: 40px;
+		font-size: 20px;
+	}
+	#formsignup .inputsignin i {
+		top: 5px;
+	}
+	#formsignup .inputsignin {
+		width: 70%;
+	}
+	.inputsignin i {
+		font-size: 15px;
+		top: 10px;
+	}
+	#formsignin input[type="button"] {
+		width: 40%;
+		font-size: 13px;
+	}
+	#formsignin p {
+		font-size: 11px;
+		margin-top: 40px;
+	}
+	#formsignin > p span {
+		font-size: 13px;
+	}
+	#fortext {
+		display: none;
+	}
+	#formsignup {
+		width: 90%;
+		right: 5%;
+		left: 5%;
+		bottom: 20px;
+		top: 20px;
+	}
+	.inputsignin select {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	#btnsignup {
+		margin-top: 30px;
+		font-size: 13px;
+		width: 50%;
+		height: 25px;
+	}
+	#returnsignin span{
+		font-size: 13px;
+	}
+}

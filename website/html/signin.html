@@ -5,6 +5,7 @@
 	<title>Đăng nhập - Đăng ký</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/signin.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediasignin.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	
 
@@ -35,7 +36,7 @@
 				<input type="password" name="" placeholder="&#160&#160 Mật khẩu" id="passwordsignin" class="input">
 				<i class="fas fa-unlock-alt"></i>
 				</div>
-				<input type="button" name="" value="Đăng nhập">
+				<input type="button" name="" value="Đăng nhập" onclick="signin();">
 				<p>Bạn chưa có tài khoản ? <span onclick="hide();">Đăng ký</span> ngay.</p>
 			</form>
 			<form id="formsignup">
@@ -68,7 +69,7 @@
 					</select>
 				</div>
 				<div class="inputsignin">
-						<input type="button" name="" value="Đăng ký" id="btnsignup">
+						<input type="button" name="" value="Đăng ký" id="btnsignup" onclick="signup();">
 				</div>
 				<div class="inputsignin" style="margin-top: 4%;">
 					<p id="returnsignin">Bạn đã có tài khoản ? Quay lại <span onclick="show();">Đăng nhập</span></p>
