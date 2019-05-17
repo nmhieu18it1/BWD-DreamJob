@@ -32,7 +32,7 @@ var nav = document.querySelector('#navguide');
 var cont = document.querySelector('#content');
 function mucdich() {
 	// body...
-	nav.innerHTML = "<h1 id='canhan' onclick='intext(this)'>Cá nhân</h1><h1 id='xahoi' onclick='intext(this)'>Xã hội</h1>";
+	nav.innerHTML = "<h1 id='gioithieu' onclick='intext(this)'>Giới thiệu</h1><h1 id='mucdich' onclick='intext(this)'>Mục đích</h1><h1 id='muctieu' onclick='intext(this)'>Mục tiêu</h1>";
 	cont.innerHTML = "<p>Bạn đang ở phần Mục Đích...</p>"
 };
 function huongdan() {
