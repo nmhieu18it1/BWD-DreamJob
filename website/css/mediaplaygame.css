@@ -1,0 +1,72 @@
+@media screen and (max-width: 1025px) {
+	#menubar {
+		height: 60px;
+	}
+	#menu-left {
+		display: none;
+	}
+	#menu-right {
+		width: 500px;
+	}
+	#menu-right > a {
+		font-size: 15px;
+	}
+	#gametop {
+		display: none;
+	}
+	.relative-item {
+		width: 130px;
+		height: 180px;
+		margin: 15px 10px;
+	}
+	#comment {
+		display: none;
+	}
+	#playgame {
+		width: 100%;
+		float: left;
+	}
+	.div-100 {
+	width: 100%;
+	display: block;
+	}
+	.div-100 p {
+	/*text-align: center;*/
+	/*margin-top: 3%;*/
+	font-size: 15px;
+	color: #888888;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	}
+}
+@media screen and (max-width: 600px) {
+	#playgame {
+		width: 100%;
+		height: 500px;
+		position: relative;
+		margin-bottom: 40px;
+		/*background-color: pink;*/
+	}
+	#screen:before {
+		font-size: 15px;
+		padding: 10px 0px;
+	}
+	#relativegame {
+		margin-top: 20px;
+	}
+	#relativegame:before {
+		font-size: 15px;
+		width: 50%;
+		left: 25%;
+		padding: 10px;
+	}
+	#screen-button {
+		width: 100%;
+	}
+	#screen-button a {
+		font-size: 10px;
+		padding: 8px;
+		height: auto;
+	}
+}
