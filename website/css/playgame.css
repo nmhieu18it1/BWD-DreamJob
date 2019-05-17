@@ -6,7 +6,7 @@
 }
 #menubar {
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	background-color: white;
 	margin-top: 20px;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(138,133,138,0.75);
@@ -17,21 +17,21 @@
 	justify-content: space-around;
 }
 #menu-left {
-	width: 500px;
-	height: 100px;
+	width: 400px;
+	height: 80px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	/*background-color: red;*/
 }
 #menu-left > span {
-	font-size: 35px;
+	font-size: 25px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
 #menu-left > span h1 {
 	display: inline-block;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	background-color: #6633CC;
 	font-family: Arial, Helvetica, sans-serif;
@@ -40,9 +40,470 @@
 	border-radius: 30px;
 }
 #menu-right {
-	width: 800px;
-	height: 100px;
-	background-color: red;
+	width: 600px;
+	height: 80px;
+	/*background-color: red;*/
 	display: flex;
 	justify-content: space-around;
+}
+#menu-right > a {
+	height: 100%;
+	/*background-color: blue;*/
+	font-size: 20px;
+	color: #6400FF;
+	text-decoration: none;
+	padding: 20px 10px;
+}
+#content {
+	width: 100%;
+	height: 650px;
+	/*background-color: red;*/
+	margin-top: 120px;
+	display: flex;
+	justify-content: space-around;
+}
+#comment {
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	opacity: 1;
+	transition: all 0.5s;
+	/*background-color: green;*/
+	position: relative;
+	border: 3px solid #CC66FF;
+}
+#comment:before {
+	content: 'Bình Luận';
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 8px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	height: 50px;
+	width: 70%;
+	top: -50px;
+	left: 15%;
+	background-color: #CC66FF;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#iconhide {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	transform: scale(0.6);
+	cursor: pointer;
+	display: block;
+}
+#iconhide i {
+	font-size: 30px;
+	border: 3px solid #CC66FF;
+	padding: 5px 7px;
+	color: #CC66FF;
+	background-color: white;
+	border-radius: 30px;
+}
+#comment-contain {
+	width: 100%;
+	height: 88%;
+	margin: auto;
+	overflow: auto;
+}
+#comment-title {
+	width: 100%;
+}
+#comment-title h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#comment .cmt {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+}
+.cmt img {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	margin: 20px 10px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.cmt img:hover {
+	transform: scale(1.1);
+}
+.cmt .cmt-content {
+	width: 180px;
+	height: auto;
+	float: left;
+	margin: 15px 5px;
+	position: relative;
+	border: 2px solid #666666;
+	border-radius: 10px;
+}
+.cmt-content:before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: -6px;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	background-color: white;
+	border: 2px solid #666666;
+	border-right: none;
+	border-top: none;
+}
+.cmt-content > p {
+	padding: 5px 15px;
+	text-align: justify;
+	font-size: 15px;
+}
+#playgame {
+	width: 55%;
+	height: 100%;
+	position: relative;
+	margin-bottom: 40px;
+	/*background-color: pink;*/
+}
+#iconshow-comment {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+	transform: scale(0.6);
+	cursor: pointer;
+	display: none;
+	z-index: 99;
+}
+#iconshow-comment i {
+	font-size: 30px;
+	border: 3px solid #99FF99;
+	padding: 5px 7px;
+	color: #99FF99;
+	background-color: white;
+	border-radius: 30px;
+}
+#iconshow-gametop {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	transform: scale(0.6);
+	cursor: pointer;
+	display: none;
+	z-index: 99;
+}
+#iconshow-gametop i {
+	font-size: 30px;
+	border: 3px solid #99FF99;
+	padding: 5px 7px;
+	color: #99FF99;
+	background-color: white;
+	border-radius: 30px;
+}
+#gametop {
+	width: 20%;
+	height: 100%;
+	/*background-color: blue;*/
+	position: relative;
+	border: 3px solid #3399FF;
+	margin-bottom: 20px;
+	opacity: 1;
+	transition: all 0.5s;
+}
+#gametop:before {
+	content: 'Người chơi';
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 8px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	height: 50px;
+	width: 80%;
+	top: -50px;
+	left: 10%;
+	background-color: #3399FF;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#iconhide-gametop {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+	transform: scale(0.6);
+	cursor: pointer;
+}
+#iconhide-gametop i {
+	font-size: 30px;
+	border: 3px solid #3399FF;
+	padding: 5px 7px;
+	color: #3399FF;
+	background-color: white;
+	border-radius: 30px;
+}
+#gametop-title {
+	width: 100%;
+}
+#gametop-title h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#gametop-content {
+	width: 100%;
+	height: 88%;
+	overflow: auto;
+}
+.gametop-item {
+	width: 95%;
+	height: 80px;
+	margin: auto;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.gametop-item img {
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	display: inline-block;
+	transform: scale(0.8);
+}
+.gametop-item-des {
+	width: 130px;
+	height: 80px;
+}
+.gametop-item-des > h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	color: #0066FF;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.gametop-item-des > h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	color: #0066FF;
+	margin-top: 10px;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+}
+#screen {
+	width: 100%;
+	height: 88%;
+	/*background-color: white;*/
+	border: 7px solid #99FF99;
+	position: relative;
+}
+#screen img {
+	width: 100%;
+	height: 100%;
+	transform: scale(0.97);
+}
+#screen:before {
+	content: 'Plants Vs Zombies';
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding: 6px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	height: 50px;
+	width: 50%;
+	top: -50px;
+	left: 25%;
+	right: 25%;
+	background-color: #99FF99;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	transform: scale(0.97);
+	background-color: black;
+	opacity: 0;
+	transition: all 0.3s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+#screen:hover .overlay {
+	opacity: 0.7;
+}
+.playnow {
+	width: 200px;
+	height: 300px;
+	/*background-color: red;*/
+	position: absolute;
+	top: 100px;
+	right: 300px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.playnow:hover {
+	transform: scale(1.1);
+}
+.playnow i {
+	font-size: 130px;
+	color: white;
+	position: absolute;
+	top: 50px;
+	left: 60px;
+}
+.playnow h1 {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 60px;
+	left: 50px;
+}
+#screen-button {
+	width: 80%;
+	height: 30px;
+	margin: auto;
+	/*background-color: red;*/
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+#screen-button a {
+	font-size: 15px;
+	height: 35px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 5px 30px;
+	border-radius: 30px;
+}
+#relativegame {
+	width: 100%;
+	height: 600px;
+	border: 3px solid #FF6666;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	position: relative;
+}
+#relativegame:before {
+	content: 'Game tương tự';
+	position: absolute;
+	width: 40%;
+	height: 50px;
+	top: -50px;
+	left: 30%;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	background-color:#FF6666;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#relative-contain {
+	width: 95%;
+	height: 95%;
+	margin: auto;
+	margin-top: 15px;
+	overflow: auto;
+}
+.relative-item {
+	width: 150px;
+	height: 200px;
+	margin: 15px 10px;
+	display: inline-block;
+}
+.relative-item img {
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: auto;
+}
+.item-des {
+	width: 100%;
+	height: 70px;
+	margin-top: 10px;
+}
+.item-name {
+	width: 100%;
+	height: 70%;
+}
+.item-name h1 {
+	width: 100%;
+	font-size: 14px;
+	color: #0099FF;
+	text-align: center;
+	padding: 3px;
+	cursor: pointer;
+}
+.item-info {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: space-around;
+}
+.item-info i {
+	font-size: 13px;
+}
+#under {
+	width: 100%;
+	height: 70px;
+}
+.div-50 {
+	width: 50%;
+	height: 100%;
+	float: left;
+	/*background-color: red;*/
+}
+.div-50 p {
+	text-align: center;
+	margin-top: 3%;
+	font-size: 15px;
+	color: #888888;
+}
+.div-100 {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.div-100 p {
+	/*text-align: center;*/
+	/*margin-top: 3%;*/
+	font-size: 18px;
+	color: #888888;
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+.div-100 p i {
+	color: #0066FF;
 }
