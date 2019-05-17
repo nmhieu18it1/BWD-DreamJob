@@ -68,6 +68,13 @@ function hidemenures() {
 }
 function selected(obj) {
 	// body...
-	obj.style.border = '2px solid #CC66FF';
-	obj.style.color = '#CC66FF';
+	if (obj.style.color == '#0099FF') {
+		// obj.style.color = '#cc66ff';
+		alert(obj.style.color);
+	}
+	else {
+		// obj.style.border = '2px solid #0099FF';
+		// obj.style.color = '#0099FF';
+		alert(obj.innerHTML);
+	}
 }
