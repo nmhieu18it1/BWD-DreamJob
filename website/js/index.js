@@ -66,3 +66,8 @@ function hidemenures() {
 	menure.style.opacity = '0';
 	menure.style.zIndex = '-1';
 }
+function selected(obj) {
+	// body...
+	obj.style.border = '2px solid #CC66FF';
+	obj.style.color = '#CC66FF';
+}
