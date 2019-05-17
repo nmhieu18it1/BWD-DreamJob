@@ -34,14 +34,44 @@
 	#slide {
 		display: none;
 	}
+	#seach-div01 {
+		width: 500px;
+		margin: 5px 10px;
+	}
+	#seach-div02 {
+		margin: 5px 5px;
+	}
+	#seach-div02 label {
+		display: none;
+	}
+	#seach-div02 h1 {
+		font-size: 12px;
+		margin: 0px 2px;
+		border: none;
+		padding: 2px 2px;
+	}
+	#searchbar {
+		width: 180px;
+		font-size: 12px;
+	}
+	#cato02, #cato04, #cato06 {
+		display: none;
+	}
+	.catos-item {
+		width: 24%;
+	}
+	.catos-item > h1 {
+		font-size: 12px;
+	}
 	#icongame {
 		transform: scale(0.6);
 		left: 5px;
 		bottom: 5px;
+		display: none;
 	}
 	#textgame {
 		top: 20px;
-		right: 10px;
+		left: 70px;
 	}
 	#textgame h1 {
 		font-size: 35px;
@@ -69,7 +99,8 @@
 		height: 60%;
 	}
 	#gametop01 #list {
-		overflow-x: scroll;
+		overflow: scroll;
+		display: block;
 	}
 	#list .listitem {
 		width: 30%;
