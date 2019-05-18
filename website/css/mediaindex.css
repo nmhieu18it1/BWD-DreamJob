@@ -186,6 +186,7 @@
 	}
 	#textgame h2 {
 		font-size: 12px;
+		display: none;
 	}
 	.gameitem {
 		width: 45%;
@@ -352,5 +353,47 @@
 	}
 	.div-100 p {
 		font-size: 10px;
+	}
+	#seach-div01 {
+		width: 500px;
+		margin: 5px 10px;
+	}
+	#seach-div02 {
+		margin: 5px 5px;
+	}
+	#seach-div02 label {
+		display: none;
+	}
+	#seach-div02 h1 {
+		font-size: 7px;
+		margin: 0px 1px;
+		border: none;
+		padding: 0px 0px;
+	}
+	#searchbar {
+		width: 80px;
+		height: 20px;
+		font-size: 10px;
+	}
+	#searchbutton {
+		width: 30px;
+		height: 20px;
+		font-size: 10px;
+	}
+	#cato02, #cato04, #cato06, #cato05 {
+		display: none;
+	}
+	.catos-item {
+		width: 33%;
+	}
+	.catos-item > img {
+	width: 25px;
+	height: 25px;
+	}
+	.catos-item > h1 {
+		font-size: 10px;
+	}
+	#gameitems {
+		height: 350px;
 	}
 }
