@@ -7,6 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="../css/signin.css">
 	<link rel="stylesheet" type="text/css" href="../css/mediasignin.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script type="text/javascript" src="../js/signinout.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.js"
+	  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	  crossorigin="anonymous"></script>
 	
 
 </head>
@@ -29,14 +34,14 @@
 			<form id="formsignin">
 				<h1>ĐĂNG NHẬP</h1>
 				<div class="inputsignin">
-				<input type="email" name="" placeholder="&#160&#160 Email" id="email" class="input">
+				<input type="email" name="" placeholder="&#160&#160 Email" id="emailsignin" class="input">
 				<i class="fas fa-envelope"></i>
 				</div>
 				<div class="inputsignin">
 				<input type="password" name="" placeholder="&#160&#160 Mật khẩu" id="passwordsignin" class="input">
 				<i class="fas fa-unlock-alt"></i>
 				</div>
-				<input type="button" name="" value="Đăng nhập" onclick="signin();">
+				<input type="button" name="" value="Đăng nhập">
 				<p>Bạn chưa có tài khoản ? <span onclick="hide();">Đăng ký</span> ngay.</p>
 			</form>
 			<form id="formsignup">

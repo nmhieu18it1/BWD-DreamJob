@@ -535,6 +535,9 @@ body {
 	text-decoration: none;
 	color: #222222;
 }
+.gamename > a h1:hover {
+	color: #6699FF;
+}
 .gamecount {
 	width: 100%;
 	height: 15%;
@@ -602,6 +605,11 @@ body {
 	width: 100%;
 	text-align: center;
 	color: black;
+	cursor: pointer;
+}
+.gametopname > h1 a {
+	color: #0099CC;
+	text-decoration: none;
 }
 .gametopcount i {
 	font-size: 13px;

@@ -18,6 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
 
+	<script type="text/javascript" src="../js/profilekid.js"></script>
+
 	<script type="text/javascript">
 		function dialoggift() {
 			// body...
@@ -110,7 +112,7 @@
 
 				<center>
 				<input type="search" name="" placeholder="Tìm kiếm mọi người ...">
-				<a href=""><i class="fas fa-search"></i></a>
+				<a onclick="search_fr();" style="cursor: pointer;"><i class="fas fa-search"></i></a>
 				</center>
 
 				<div id="searchresult">
@@ -121,8 +123,8 @@
 			</div>
 
 			<div id="menu">
-				<label>Điểm:&#160&#160 245 pt</label>
-				<a href="./index.html#headgame" id="point">Tích điểm ngay</a>
+				<label>Điểm:&#160&#160 <span id="yourpoint">245</span> pt</label>
+				<a href="./index.html#headgame" id="point" target="_blank">Tích điểm ngay</a>
 				<div id="menubar1">
 					<ul>
 						<li style="border-bottom-right-radius: 0; background-color: #8530e6;"><a href="./index.html" target="_blank">Trang chủ</a></li>
@@ -138,8 +140,7 @@
 		<!--#center-->
 		<div id="center">
 
-			<div style="width: 40%;margin: auto;margin-top: 2%;
-			border-bottom: 1px solid #4929f1;">
+			<div style="width: 40%;margin: auto;margin-top: 2%;">
 				<h1 id="quanhieunhat">Quà được chọn nhiều nhất</h1>
 			</div>
 
@@ -150,8 +151,8 @@
 						<img src="../img/gift/slide/1.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -161,8 +162,8 @@
 						<img src="../img/gift/slide/4.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -172,8 +173,8 @@
 						<img src="../img/gift/slide/5.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -183,8 +184,8 @@
 						<img src="../img/gift/slide/1.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -194,8 +195,8 @@
 						<img src="../img/gift/slide/4.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -205,8 +206,8 @@
 						<img src="../img/gift/slide/5.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -216,8 +217,8 @@
 						<img src="../img/gift/slide/1.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -227,8 +228,8 @@
 						<img src="../img/gift/slide/4.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
@@ -238,214 +239,231 @@
 						<img src="../img/gift/slide/5.jpg">
 					</div>
 					<center>
-					<h1>240 pt</h1>
-					<a href="" onclick="dialoggift();">Chọn</a>
+					<h1><span id="pointpay">240</span> pt</h1>
+					<h2 onclick="pointpay();">Chọn</h2>
 					</center>
 				</div>
 	    </div>
 	</div>
 
-	<div style="width: 20%;margin: auto;margin-top: 10%;
-			border-bottom: 1px solid #4929f1;">
+	<div style="width: 20%;margin: auto;margin-top: 10%;">
 				<h1 id="qua">Quà tặng</h1>
 			</div>
 
 			<!--#content-->
 			<div id="content">
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/1.jpg">
-					<div class="des">
-						<h1>Móc khóa Rồng</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/2.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/3.jpg">
-					<div class="des">
-						<h1>Thú bông</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/4.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/5.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/6.jpg">
-					<div class="des">
-						<h1>Gối cute</h1>
-						<h2>Size: 100x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/7.jpg">
-					<div class="des">
-						<h1>Đồng hồ cute</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/8.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/9.jpeg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/10.jpg">
-					<div class="des">
-						<h1>Gối Minion</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/11.jpg">
-					<div class="des">
-						<h1>Pikachu cute</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/1.jpg">
-					<div class="des">
-						<h1>Móc khóa Rồng</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/2.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/3.jpg">
-					<div class="des">
-						<h1>Thú bông</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/4.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/5.jpg">
-					<div class="des">
-						<h1>Rồng con</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/6.jpg">
-					<div class="des">
-						<h1>Gối cute</h1>
-						<h2>Size: 100x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>
 				</div>
 				<div class="contentitem">
+					<i class="fas fa-info-circle">
+						<div class="info">
+							<h1>Thông tin về sản phẩm</h1>
+						</div>
+					</i>
 					<div class="img">
 						<img src="../img/gift/7.jpg">
-					<div class="des">
-						<h1>Đồng hồ cute</h1>
-						<h2>Size: 20x20 cm</h2>
-					</div>
 					</div>
 					<h1>240 pt</h1>
 					<a href="" onclick="dialoggift();">Chọn</a>

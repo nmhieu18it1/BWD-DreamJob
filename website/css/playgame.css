@@ -35,9 +35,13 @@
 	font-weight: bold;
 	background-color: #6633CC;
 	font-family: Arial, Helvetica, sans-serif;
-	color: white;
 	padding: 10px 30px;
 	border-radius: 30px;
+}
+#menu-left > span h1 a {
+	color: white;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
 }
 #menu-right {
 	width: 600px;
@@ -301,6 +305,10 @@
 	margin-top: 10px;
 	cursor: pointer;
 }
+.gametop-item-des > h1 a {
+	color: #0066FF;
+	text-decoration: none;
+}
 .gametop-item-des > h2 {
 	width: 100%;
 	text-align: center;
@@ -404,6 +412,7 @@
 	color: white;
 	padding: 5px 30px;
 	border-radius: 30px;
+	cursor: pointer;
 }
 #relativegame {
 	width: 100%;
@@ -464,6 +473,10 @@
 	text-align: center;
 	padding: 3px;
 	cursor: pointer;
+}
+.item-name h1 a {
+	color: #0099FF;
+	text-decoration: none;
 }
 .item-info {
 	width: 100%;

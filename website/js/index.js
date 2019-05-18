@@ -68,13 +68,11 @@ function hidemenures() {
 }
 function selected(obj) {
 	// body...
-	if (obj.style.color == '#0099FF') {
-		// obj.style.color = '#cc66ff';
-		alert(obj.style.color);
-	}
-	else {
-		// obj.style.border = '2px solid #0099FF';
-		// obj.style.color = '#0099FF';
-		alert(obj.innerHTML);
-	}
+		obj.style.color = '#cc66ff';
+		obj.style.border = '2px solid #cc66ff';
+}
+function contact() {
+	// body...
+	var obj = document.getElementById('nameinput');
+	alert('Xin chào ' + obj.value + ' ! Cảm ơn bạn đã tin tưởng chúng tôi, chúng tôi mong sẽ có thể phản hồi cho bạn trong thời gian sớm nhất !')
 }
